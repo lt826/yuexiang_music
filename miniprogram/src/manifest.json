@@ -1,0 +1,20 @@
+{
+  "name": "悦享音乐",
+  "appid": "",
+  "description": "悦享音乐小程序端",
+  "versionName": "1.0.0",
+  "versionCode": "100",
+  "transformPx": false,
+  "vueVersion": "3",
+  "mp-weixin": {
+    "appid": "wx1b2c2c4bf77deb5b",
+    "usingComponents": true,
+    "requiredBackgroundModes": ["audio"],
+    "setting": {
+      "urlCheck": false,
+      "es6": true,
+      "postcss": true,
+      "minified": true
+    }
+  }
+}
