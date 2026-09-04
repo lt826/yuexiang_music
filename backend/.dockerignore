@@ -1,0 +1,18 @@
+**/node_modules
+**/dist
+**/.git
+**/logs
+**/work
+**/.idea
+**/*.iml
+*.log
+derby.log
+.DS_Store
+.gitignore
+# 排除 target 里非 jar 的编译产物，减小构建上下文
+**/target/classes
+**/target/generated-sources
+**/target/maven-status
+**/target/maven-archiver
+**/target/test-classes
+**/*.jar.original

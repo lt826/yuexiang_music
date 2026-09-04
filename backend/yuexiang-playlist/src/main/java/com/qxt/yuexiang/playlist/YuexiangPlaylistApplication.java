@@ -1,0 +1,19 @@
+package com.qxt.yuexiang.playlist;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+import org.springframework.cloud.openfeign.EnableFeignClients;
+
+/**
+ * 歌单
+ */
+@SpringBootApplication(scanBasePackages = "com.qxt.yuexiang")
+@EnableDiscoveryClient
+@EnableFeignClients
+public class YuexiangPlaylistApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(YuexiangPlaylistApplication.class, args);
+    }
+}
