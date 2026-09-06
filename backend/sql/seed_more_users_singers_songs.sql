@@ -1,0 +1,107 @@
+-- ============================================================
+-- 扩充种子数据：50 用户 / 10 歌手 / 30 歌曲
+-- 用户密码均为 123456（BCrypt）；音频复用 data/file/song 已有 mp3
+-- 可重复执行：先删后插
+-- ============================================================
+
+USE yuexiang_singer;
+DELETE FROM `singer` WHERE `id` BETWEEN 21 AND 30;
+INSERT INTO `singer` (`id`, `name`, `introduction`, `status`) VALUES
+(21,'木鱼组合','国风新民谣组合，古筝与吉他的碰撞。',1),
+(22,'程一诺','治愈系女声，嗓音干净温暖。',1),
+(23,'Noise Garden','独立摇滚乐队，现场演出常客。',1),
+(24,'DJ Nova','电子舞曲制作人，夜店榜单常客。',1),
+(25,'阿依古丽','新疆民族唱腔，辽阔高亢。',1),
+(26,'Blue Hour','爵士四重奏，午夜俱乐部驻场。',1),
+(27,'陆知行','说唱新人，方言说唱代表。',1),
+(28,'小满','校园民谣女歌手，清新治愈。',1),
+(29,'Zen Garden','环境音乐制作人，冥想音乐厂牌。',1),
+(30,'Kira','偶像流行歌手，舞台感染力强。',1);
+
+USE yuexiang_song;
+DELETE FROM `song` WHERE `id` BETWEEN 57 AND 86;
+INSERT INTO `song` (`id`, `singer_id`, `name`, `style`, `play_count`, `status`, `url`) VALUES
+(57, 21, '月下抚琴', '国风', 600373, 1, '/api/file/song/6421900dbc2a4907ad9e43a453ee7ecf.mp3'),
+(58, 21, '长安秋辞', '国风', 535079, 1, '/api/file/song/27b76c7897574bb99e7828f8a3cbe116.mp3'),
+(59, 21, '墨染江南', '国风', 527663, 1, '/api/file/song/774556cec11b4a519196d08a86be0623.mp3'),
+(60, 22, '慢慢喜欢', '流行', 359016, 1, '/api/file/song/5a89cf4f3751419c9fd7cf7a68d0cf9e.mp3'),
+(61, 22, '温柔坠落', '流行', 793672, 1, '/api/file/song/a1f3c2d84e9b47c6b8d2051e3f7a9042.mp3'),
+(62, 22, '晚风信笺', '流行', 727236, 1, '/api/file/song/c3d7a1e25b8f49c68e15d3a7c9b02e44.mp3'),
+(63, 23, '霓虹废墟', '摇滚', 601194, 1, '/api/file/song/d4a8b2f36c9d40d78f26e4b8d0c13a55.mp3'),
+(64, 23, '失重', '摇滚', 43064, 1, '/api/file/song/f6c0d4b58e1f42970a48c6d0f2e35c77.mp3'),
+(65, 23, '碎玻璃', '摇滚', 434908, 1, '/api/file/song/6421900dbc2a4907ad9e43a453ee7ecf.mp3'),
+(66, 24, '午夜脉冲', '电子', 285022, 1, '/api/file/song/27b76c7897574bb99e7828f8a3cbe116.mp3'),
+(67, 24, '激光雨', '电子', 729654, 1, '/api/file/song/774556cec11b4a519196d08a86be0623.mp3'),
+(68, 24, '零点蹦迪', '电子', 333966, 1, '/api/file/song/5a89cf4f3751419c9fd7cf7a68d0cf9e.mp3'),
+(69, 25, '天山月', '民族', 107112, 1, '/api/file/song/a1f3c2d84e9b47c6b8d2051e3f7a9042.mp3'),
+(70, 25, '葡萄架下', '民族', 595735, 1, '/api/file/song/c3d7a1e25b8f49c68e15d3a7c9b02e44.mp3'),
+(71, 26, 'Blue Midnight', '爵士', 250297, 1, '/api/file/song/d4a8b2f36c9d40d78f26e4b8d0c13a55.mp3'),
+(72, 26, '烟嗓威士忌', '爵士', 380049, 1, '/api/file/song/f6c0d4b58e1f42970a48c6d0f2e35c77.mp3'),
+(73, 26, '慢摇摆', '爵士', 184431, 1, '/api/file/song/6421900dbc2a4907ad9e43a453ee7ecf.mp3'),
+(74, 27, '老街故事', '说唱', 740863, 1, '/api/file/song/27b76c7897574bb99e7828f8a3cbe116.mp3'),
+(75, 27, '巷口Freestyle', '说唱', 48779, 1, '/api/file/song/774556cec11b4a519196d08a86be0623.mp3'),
+(76, 28, '毕业那年的夏天', '民谣', 82406, 1, '/api/file/song/5a89cf4f3751419c9fd7cf7a68d0cf9e.mp3'),
+(77, 28, '同桌的你2026', '民谣', 275260, 1, '/api/file/song/a1f3c2d84e9b47c6b8d2051e3f7a9042.mp3'),
+(78, 29, '深空冥想', '轻音乐', 264719, 1, '/api/file/song/c3d7a1e25b8f49c68e15d3a7c9b02e44.mp3'),
+(79, 29, '呼吸练习', '轻音乐', 267169, 1, '/api/file/song/d4a8b2f36c9d40d78f26e4b8d0c13a55.mp3'),
+(80, 29, '雨林白噪音', '轻音乐', 535621, 1, '/api/file/song/f6c0d4b58e1f42970a48c6d0f2e35c77.mp3'),
+(81, 30, '心跳信号', '偶像', 794960, 1, '/api/file/song/6421900dbc2a4907ad9e43a453ee7ecf.mp3'),
+(82, 30, '糖果星球', '偶像', 45656, 1, '/api/file/song/27b76c7897574bb99e7828f8a3cbe116.mp3'),
+(83, 30, '闪亮登场', '偶像', 819432, 1, '/api/file/song/774556cec11b4a519196d08a86be0623.mp3'),
+(84, 22, '一个人的城市', '流行', 364555, 1, '/api/file/song/5a89cf4f3751419c9fd7cf7a68d0cf9e.mp3'),
+(85, 21, '风起敦煌', '国风', 597275, 1, '/api/file/song/a1f3c2d84e9b47c6b8d2051e3f7a9042.mp3'),
+(86, 23, '野蔷薇', '摇滚', 554583, 1, '/api/file/song/c3d7a1e25b8f49c68e15d3a7c9b02e44.mp3');
+
+USE yuexiang_user;
+DELETE FROM `user` WHERE `username` REGEXP '^(user|fan|listener|tone|note|beat|chord|tune|sound|wave)[0-9]+[0-9]+$' AND `nickname` IN ('星河','桃子','小鹿','云朵','绵绵','夏至','青柠','南风','知语','半夏','暖阳','栀夏','青黛','栖迟','未央','麦芽','拾光','柚子','初晴','雾岛','月见','杏子','远山','茶茶','萤火','北辰','山海','远航','长风','疏影','扶苏','听澜','墨白','折柳','落霞','青云','鹤归','临渊','怀瑾','望舒','枕星','叙白','渡口','雾都','旷野','拾贝','听风','层云','与同','飞白');
+INSERT INTO `user` (`username`, `password`, `nickname`, `gender`, `signature`, `role`, `status`) VALUES
+('user72641', '$2b$10$DPwuNir2xIwWvalzsHedVe1f8n4vDCNxZIDdhOYdCsEEqaa/500rK', '星河', 2, '爱音乐，爱生活', 'USER', 1),
+('fan29382', '$2b$10$DPwuNir2xIwWvalzsHedVe1f8n4vDCNxZIDdhOYdCsEEqaa/500rK', '桃子', 2, '爱音乐，爱生活', 'USER', 1),
+('listener22303', '$2b$10$DPwuNir2xIwWvalzsHedVe1f8n4vDCNxZIDdhOYdCsEEqaa/500rK', '小鹿', 2, '爱音乐，爱生活', 'USER', 1),
+('tone81004', '$2b$10$DPwuNir2xIwWvalzsHedVe1f8n4vDCNxZIDdhOYdCsEEqaa/500rK', '云朵', 2, '爱音乐，爱生活', 'USER', 1),
+('note42795', '$2b$10$DPwuNir2xIwWvalzsHedVe1f8n4vDCNxZIDdhOYdCsEEqaa/500rK', '绵绵', 2, '爱音乐，爱生活', 'USER', 1),
+('beat40326', '$2b$10$DPwuNir2xIwWvalzsHedVe1f8n4vDCNxZIDdhOYdCsEEqaa/500rK', '夏至', 2, '爱音乐，爱生活', 'USER', 1),
+('chord38547', '$2b$10$DPwuNir2xIwWvalzsHedVe1f8n4vDCNxZIDdhOYdCsEEqaa/500rK', '青柠', 2, '爱音乐，爱生活', 'USER', 1),
+('tune31698', '$2b$10$DPwuNir2xIwWvalzsHedVe1f8n4vDCNxZIDdhOYdCsEEqaa/500rK', '南风', 2, '爱音乐，爱生活', 'USER', 1),
+('sound80599', '$2b$10$DPwuNir2xIwWvalzsHedVe1f8n4vDCNxZIDdhOYdCsEEqaa/500rK', '知语', 2, '爱音乐，爱生活', 'USER', 1),
+('wave286510', '$2b$10$DPwuNir2xIwWvalzsHedVe1f8n4vDCNxZIDdhOYdCsEEqaa/500rK', '半夏', 2, '爱音乐，爱生活', 'USER', 1),
+('user756911', '$2b$10$DPwuNir2xIwWvalzsHedVe1f8n4vDCNxZIDdhOYdCsEEqaa/500rK', '暖阳', 2, '爱音乐，爱生活', 'USER', 1),
+('fan809312', '$2b$10$DPwuNir2xIwWvalzsHedVe1f8n4vDCNxZIDdhOYdCsEEqaa/500rK', '栀夏', 2, '爱音乐，爱生活', 'USER', 1),
+('listener933413', '$2b$10$DPwuNir2xIwWvalzsHedVe1f8n4vDCNxZIDdhOYdCsEEqaa/500rK', '青黛', 2, '爱音乐，爱生活', 'USER', 1),
+('tone649314', '$2b$10$DPwuNir2xIwWvalzsHedVe1f8n4vDCNxZIDdhOYdCsEEqaa/500rK', '栖迟', 2, '爱音乐，爱生活', 'USER', 1),
+('note273815', '$2b$10$DPwuNir2xIwWvalzsHedVe1f8n4vDCNxZIDdhOYdCsEEqaa/500rK', '未央', 2, '爱音乐，爱生活', 'USER', 1),
+('beat686316', '$2b$10$DPwuNir2xIwWvalzsHedVe1f8n4vDCNxZIDdhOYdCsEEqaa/500rK', '麦芽', 2, '爱音乐，爱生活', 'USER', 1),
+('chord548217', '$2b$10$DPwuNir2xIwWvalzsHedVe1f8n4vDCNxZIDdhOYdCsEEqaa/500rK', '拾光', 2, '爱音乐，爱生活', 'USER', 1),
+('tune228618', '$2b$10$DPwuNir2xIwWvalzsHedVe1f8n4vDCNxZIDdhOYdCsEEqaa/500rK', '柚子', 2, '爱音乐，爱生活', 'USER', 1),
+('sound227019', '$2b$10$DPwuNir2xIwWvalzsHedVe1f8n4vDCNxZIDdhOYdCsEEqaa/500rK', '初晴', 2, '爱音乐，爱生活', 'USER', 1),
+('wave279320', '$2b$10$DPwuNir2xIwWvalzsHedVe1f8n4vDCNxZIDdhOYdCsEEqaa/500rK', '雾岛', 2, '爱音乐，爱生活', 'USER', 1),
+('user381721', '$2b$10$DPwuNir2xIwWvalzsHedVe1f8n4vDCNxZIDdhOYdCsEEqaa/500rK', '月见', 2, '爱音乐，爱生活', 'USER', 1),
+('fan393122', '$2b$10$DPwuNir2xIwWvalzsHedVe1f8n4vDCNxZIDdhOYdCsEEqaa/500rK', '杏子', 2, '爱音乐，爱生活', 'USER', 1),
+('listener616523', '$2b$10$DPwuNir2xIwWvalzsHedVe1f8n4vDCNxZIDdhOYdCsEEqaa/500rK', '远山', 2, '爱音乐，爱生活', 'USER', 1),
+('tone695724', '$2b$10$DPwuNir2xIwWvalzsHedVe1f8n4vDCNxZIDdhOYdCsEEqaa/500rK', '茶茶', 2, '爱音乐，爱生活', 'USER', 1),
+('note224325', '$2b$10$DPwuNir2xIwWvalzsHedVe1f8n4vDCNxZIDdhOYdCsEEqaa/500rK', '萤火', 2, '爱音乐，爱生活', 'USER', 1),
+('beat662326', '$2b$10$DPwuNir2xIwWvalzsHedVe1f8n4vDCNxZIDdhOYdCsEEqaa/500rK', '北辰', 1, '爱音乐，爱生活', 'USER', 1),
+('chord365427', '$2b$10$DPwuNir2xIwWvalzsHedVe1f8n4vDCNxZIDdhOYdCsEEqaa/500rK', '山海', 1, '爱音乐，爱生活', 'USER', 1),
+('tune789128', '$2b$10$DPwuNir2xIwWvalzsHedVe1f8n4vDCNxZIDdhOYdCsEEqaa/500rK', '远航', 1, '爱音乐，爱生活', 'USER', 1),
+('sound734929', '$2b$10$DPwuNir2xIwWvalzsHedVe1f8n4vDCNxZIDdhOYdCsEEqaa/500rK', '长风', 1, '爱音乐，爱生活', 'USER', 1),
+('wave777130', '$2b$10$DPwuNir2xIwWvalzsHedVe1f8n4vDCNxZIDdhOYdCsEEqaa/500rK', '疏影', 1, '爱音乐，爱生活', 'USER', 1),
+('user649031', '$2b$10$DPwuNir2xIwWvalzsHedVe1f8n4vDCNxZIDdhOYdCsEEqaa/500rK', '扶苏', 1, '爱音乐，爱生活', 'USER', 1),
+('fan546232', '$2b$10$DPwuNir2xIwWvalzsHedVe1f8n4vDCNxZIDdhOYdCsEEqaa/500rK', '听澜', 1, '爱音乐，爱生活', 'USER', 1),
+('listener383133', '$2b$10$DPwuNir2xIwWvalzsHedVe1f8n4vDCNxZIDdhOYdCsEEqaa/500rK', '墨白', 1, '爱音乐，爱生活', 'USER', 1),
+('tone570534', '$2b$10$DPwuNir2xIwWvalzsHedVe1f8n4vDCNxZIDdhOYdCsEEqaa/500rK', '折柳', 1, '爱音乐，爱生活', 'USER', 1),
+('note685335', '$2b$10$DPwuNir2xIwWvalzsHedVe1f8n4vDCNxZIDdhOYdCsEEqaa/500rK', '落霞', 1, '爱音乐，爱生活', 'USER', 1),
+('beat430436', '$2b$10$DPwuNir2xIwWvalzsHedVe1f8n4vDCNxZIDdhOYdCsEEqaa/500rK', '青云', 1, '爱音乐，爱生活', 'USER', 1),
+('chord865637', '$2b$10$DPwuNir2xIwWvalzsHedVe1f8n4vDCNxZIDdhOYdCsEEqaa/500rK', '鹤归', 1, '爱音乐，爱生活', 'USER', 1),
+('tune914738', '$2b$10$DPwuNir2xIwWvalzsHedVe1f8n4vDCNxZIDdhOYdCsEEqaa/500rK', '临渊', 1, '爱音乐，爱生活', 'USER', 1),
+('sound207939', '$2b$10$DPwuNir2xIwWvalzsHedVe1f8n4vDCNxZIDdhOYdCsEEqaa/500rK', '怀瑾', 1, '爱音乐，爱生活', 'USER', 1),
+('wave824240', '$2b$10$DPwuNir2xIwWvalzsHedVe1f8n4vDCNxZIDdhOYdCsEEqaa/500rK', '望舒', 1, '爱音乐，爱生活', 'USER', 1),
+('user862741', '$2b$10$DPwuNir2xIwWvalzsHedVe1f8n4vDCNxZIDdhOYdCsEEqaa/500rK', '枕星', 1, '爱音乐，爱生活', 'USER', 1),
+('fan333342', '$2b$10$DPwuNir2xIwWvalzsHedVe1f8n4vDCNxZIDdhOYdCsEEqaa/500rK', '叙白', 1, '爱音乐，爱生活', 'USER', 1),
+('listener774543', '$2b$10$DPwuNir2xIwWvalzsHedVe1f8n4vDCNxZIDdhOYdCsEEqaa/500rK', '渡口', 1, '爱音乐，爱生活', 'USER', 1),
+('tone548844', '$2b$10$DPwuNir2xIwWvalzsHedVe1f8n4vDCNxZIDdhOYdCsEEqaa/500rK', '雾都', 1, '爱音乐，爱生活', 'USER', 1),
+('note481345', '$2b$10$DPwuNir2xIwWvalzsHedVe1f8n4vDCNxZIDdhOYdCsEEqaa/500rK', '旷野', 1, '爱音乐，爱生活', 'USER', 1),
+('beat430246', '$2b$10$DPwuNir2xIwWvalzsHedVe1f8n4vDCNxZIDdhOYdCsEEqaa/500rK', '拾贝', 1, '爱音乐，爱生活', 'USER', 1),
+('chord329947', '$2b$10$DPwuNir2xIwWvalzsHedVe1f8n4vDCNxZIDdhOYdCsEEqaa/500rK', '听风', 1, '爱音乐，爱生活', 'USER', 1),
+('tune378948', '$2b$10$DPwuNir2xIwWvalzsHedVe1f8n4vDCNxZIDdhOYdCsEEqaa/500rK', '层云', 1, '爱音乐，爱生活', 'USER', 1),
+('sound986749', '$2b$10$DPwuNir2xIwWvalzsHedVe1f8n4vDCNxZIDdhOYdCsEEqaa/500rK', '与同', 1, '爱音乐，爱生活', 'USER', 1),
+('wave828050', '$2b$10$DPwuNir2xIwWvalzsHedVe1f8n4vDCNxZIDdhOYdCsEEqaa/500rK', '飞白', 1, '爱音乐，爱生活', 'USER', 1);
