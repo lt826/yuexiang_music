@@ -1,0 +1,68 @@
+# ============================================================
+# 悦享音乐 生产环境覆盖配置（服务器专用）
+#
+# 用法（必须 -f 叠加，基础配置仍是 docker-compose.yml）：
+#   docker compose -f docker-compose.yml -f docker-compose.prod.yml up -d
+#
+# 原则：只声明与基础文件的差异。
+#   - 收敛端口：对外只留 80（网关经前端 Nginx 反代也可以只留 80）
+#   - 中间件（Redis/RabbitMQ/Nacos/MySQL）不暴露公网
+#   - Java 服务内存上限，防 OOM 拖垮宿主机
+# 本地开发不要加载本文件，行为与现在完全一致。
+# ============================================================
+
+services:
+
+  redis:
+    ports: !override []  # 不暴露 6379，仅 compose 内部网络可访问
+
+  rabbitmq:
+    ports: !override
+      - "127.0.0.1:15672:15672"   # 管理界面仅本机（SSH 隧道查看）：ssh -L 15672:localhost:15672 server
+      # 5672 AMQP 完全不映射：消费方全在 compose 网络内
+
+  frontend:
+    ports: !override
+      - "8082:80"        # 若用域名+Nginx 统一入口可改为 127.0.0.1:8082:80
+
+  # ---- Java 服务内存上限（8G 机器建议值；4G 机器可再调低） ----
+  user:
+    environment: &java-mem
+      JAVA_TOOL_OPTIONS: -Xmx384m -Xms128m
+  song:
+    environment:
+      <<: *java-mem
+      JAVA_TOOL_OPTIONS: -Xmx384m -Xms128m
+  singer:
+    environment:
+      <<: *java-mem
+      JAVA_TOOL_OPTIONS: -Xmx384m -Xms128m
+  playlist:
+    environment:
+      <<: *java-mem
+      JAVA_TOOL_OPTIONS: -Xmx384m -Xms128m
+  favorite:
+    environment:
+      <<: *java-mem
+      JAVA_TOOL_OPTIONS: -Xmx384m -Xms128m
+  message:
+    environment:
+      <<: *java-mem
+      JAVA_TOOL_OPTIONS: -Xmx384m -Xms128m
+  file:
+    environment:
+      <<: *java-mem
+      JAVA_TOOL_OPTIONS: -Xmx384m -Xms128m
+  admin:
+    environment:
+      <<: *java-mem
+      JAVA_TOOL_OPTIONS: -Xmx384m -Xms128m
+  ai:
+    environment:
+      <<: *java-mem
+      JAVA_TOOL_OPTIONS: -Xmx384m -Xms128m
+  gateway:
+    ports: !override
+      - "80:8080"        # 生产对外唯一入口（如需 HTTPS 由前置 Nginx/宝塔终结再转 8080）
+    environment:
+      JAVA_TOOL_OPTIONS: -Xmx256m -Xms128m

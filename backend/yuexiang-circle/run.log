@@ -1,0 +1,79 @@
+2026-09-08T09:15:15.773+08:00  INFO 46256 --- [yuexiang-circle] [           main] c.a.nacos.client.logging.NacosLogging    : Nacos Logging Adapter Builder: com.alibaba.nacos.logger.adapter.logback12.LogbackNacosLoggingAdapterBuilder
+2026-09-08T09:15:15.785+08:00  INFO 46256 --- [yuexiang-circle] [           main] c.a.nacos.client.logging.NacosLogging    : Nacos Logging Adapter Builder: com.alibaba.nacos.logger.adapter.logback14.LogbackNacosLoggingAdapterBuilder
+2026-09-08T09:15:15.788+08:00  INFO 46256 --- [yuexiang-circle] [           main] c.a.nacos.client.logging.NacosLogging    : Nacos Logging Adapter: com.alibaba.nacos.logger.adapter.logback14.LogbackNacosLoggingAdapter match ch.qos.logback.classic.Logger success.
+2026-09-08T09:15:15.798+08:00  INFO 46256 --- [yuexiang-circle] [           main] c.a.nacos.client.logging.NacosLogging    : Nacos Logging Adapter Builder: com.alibaba.nacos.logger.adapter.log4j2.Log4j2NacosLoggingAdapterBuilder
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::               (v3.2.12)
+
+2026-09-08T09:15:16.140+08:00  INFO 46256 --- [yuexiang-circle] [           main] c.q.y.circle.YuexiangCircleApplication   : Starting YuexiangCircleApplication v0.0.1-SNAPSHOT using Java 17.0.17 with PID 46256 (D:\×ÀÃæÓ¦ÓÃ\yuexiang_project\yuexiang_backed\yuexiang-circle\target\yuexiang-circle-0.0.1-SNAPSHOT.jar started by 86191 in D:\×ÀÃæÓ¦ÓÃ\yuexiang_project\yuexiang_backed\yuexiang-circle)
+2026-09-08T09:15:16.143+08:00 DEBUG 46256 --- [yuexiang-circle] [           main] c.q.y.circle.YuexiangCircleApplication   : Running with Spring Boot v3.2.12, Spring v6.1.15
+2026-09-08T09:15:16.145+08:00  INFO 46256 --- [yuexiang-circle] [           main] c.q.y.circle.YuexiangCircleApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-09-08T09:15:17.903+08:00  INFO 46256 --- [yuexiang-circle] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-09-08T09:15:17.907+08:00  INFO 46256 --- [yuexiang-circle] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-09-08T09:15:17.940+08:00  INFO 46256 --- [yuexiang-circle] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2026-09-08T09:15:18.276+08:00  INFO 46256 --- [yuexiang-circle] [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=79eb8132-c914-35b0-845f-7abe0701bbf1
+2026-09-08T09:15:18.683+08:00  WARN 46256 --- [yuexiang-circle] [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2026-09-08T09:15:18.690+08:00  WARN 46256 --- [yuexiang-circle] [           main] trationDelegate$BeanPostProcessorChecker : Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2026-09-08T09:15:19.257+08:00  INFO 46256 --- [yuexiang-circle] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8090 (http)
+2026-09-08T09:15:19.303+08:00  INFO 46256 --- [yuexiang-circle] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-09-08T09:15:19.304+08:00  INFO 46256 --- [yuexiang-circle] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2026-09-08T09:15:19.368+08:00  INFO 46256 --- [yuexiang-circle] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-09-08T09:15:19.372+08:00  INFO 46256 --- [yuexiang-circle] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3140 ms
+Logging initialized using 'class org.apache.ibatis.logging.stdout.StdOutImpl' adapter.
+Get /172.26.240.1 network interface 
+Get network interface info: name:eth19 (Hyper-V Virtual Ethernet Adapter)
+Initialization Sequence datacenterId:10 workerId:18
+ _ _   |_  _ _|_. ___ _ |    _ 
+| | |\/|_)(_| | |_\  |_)||_|_\ 
+     /               |         
+                        3.5.7 
+2026-09-08T09:15:20.853+08:00  INFO 46256 --- [yuexiang-circle] [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'yuexiang-user' URL not provided. Will try picking an instance via load-balancing.
+2026-09-08T09:15:20.975+08:00  INFO 46256 --- [yuexiang-circle] [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'yuexiang-message' URL not provided. Will try picking an instance via load-balancing.
+2026-09-08T09:15:21.755+08:00  INFO 46256 --- [yuexiang-circle] [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'yuexiang-song' URL not provided. Will try picking an instance via load-balancing.
+2026-09-08T09:15:23.182+08:00  WARN 46256 --- [yuexiang-circle] [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-09-08T09:15:23.271+08:00  INFO 46256 --- [yuexiang-circle] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8090 (http) with context path ''
+2026-09-08T09:15:23.364+08:00  INFO 46256 --- [yuexiang-circle] [           main] c.a.n.p.a.s.c.ClientAuthPluginManager    : [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2026-09-08T09:15:23.365+08:00  INFO 46256 --- [yuexiang-circle] [           main] c.a.n.p.a.s.c.ClientAuthPluginManager    : [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2026-09-08T09:15:24.592+08:00  INFO 46256 --- [yuexiang-circle] [           main] c.a.n.c.a.AbstractAbilityControlManager  : Ready to get current node abilities...
+2026-09-08T09:15:24.594+08:00  INFO 46256 --- [yuexiang-circle] [           main] c.a.n.c.a.AbstractAbilityControlManager  : Ready to initialize current node abilities, support modes: [SDK_CLIENT]
+2026-09-08T09:15:24.596+08:00  INFO 46256 --- [yuexiang-circle] [           main] c.a.n.c.a.AbstractAbilityControlManager  : Initialize current abilities finish...
+2026-09-08T09:15:24.596+08:00  INFO 46256 --- [yuexiang-circle] [           main] c.a.n.c.a.d.NacosAbilityManagerHolder    : [AbilityControlManager] Successfully initialize AbilityControlManager
+2026-09-08T09:15:24.654+08:00  INFO 46256 --- [yuexiang-circle] [           main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP yuexiang-circle 192.168.14.250:8090 register finished
+2026-09-08T09:15:24.884+08:00  INFO 46256 --- [yuexiang-circle] [           main] c.q.y.circle.YuexiangCircleApplication   : Started YuexiangCircleApplication in 10.029 seconds (process running for 11.013)
+2026-09-08T09:15:44.822+08:00  INFO 46256 --- [yuexiang-circle] [nio-8090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-09-08T09:15:44.823+08:00  INFO 46256 --- [yuexiang-circle] [nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-09-08T09:15:44.826+08:00  INFO 46256 --- [yuexiang-circle] [nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@318efae9] was not registered for synchronization because synchronization is not active
+2026-09-08T09:15:44.972+08:00  INFO 46256 --- [yuexiang-circle] [nio-8090-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-09-08T09:15:45.205+08:00  INFO 46256 --- [yuexiang-circle] [nio-8090-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@41fc8d8
+2026-09-08T09:15:45.207+08:00  INFO 46256 --- [yuexiang-circle] [nio-8090-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+JDBC Connection [HikariProxyConnection@1474980118 wrapping com.mysql.cj.jdbc.ConnectionImpl@41fc8d8] will not be managed by Spring
+==>  Preparing: SELECT id,creator_id,name,description,cover,status,reject_reason,member_count,post_count,deleted,create_time,update_time FROM circle WHERE deleted=0 AND (status = ?) ORDER BY member_count DESC,create_time DESC LIMIT 50
+==> Parameters: 1(Integer)
+<==    Columns: id, creator_id, name, description, cover, status, reject_reason, member_count, post_count, deleted, create_time, update_time
+<==        Row: 1, 72, ÖÜ½ÜÂ×·ÛË¿, ÖÜ½ÜÂ×·ÛË¿À´, null, 1, null, 2, 1, 0, 2026-09-07 20:54:17, 2026-09-07 23:09:21
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@318efae9]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@64942487] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@2004246059 wrapping com.mysql.cj.jdbc.ConnectionImpl@41fc8d8] will not be managed by Spring
+==>  Preparing: SELECT id,circle_id,creator_id,theme,initial_song_id,status,deleted,create_time,update_time FROM listen_room WHERE deleted=0 AND (status = ?) ORDER BY create_time DESC LIMIT 20
+==> Parameters: 0(Integer)
+<==      Total: 0
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@64942487]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@430c6d3b] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1305189162 wrapping com.mysql.cj.jdbc.ConnectionImpl@41fc8d8] will not be managed by Spring
+==>  Preparing: SELECT id,creator_id,name,description,cover,status,reject_reason,member_count,post_count,deleted,create_time,update_time FROM circle WHERE deleted=0 AND (status = ?) ORDER BY member_count DESC,create_time DESC LIMIT 50
+==> Parameters: 1(Integer)
+<==    Columns: id, creator_id, name, description, cover, status, reject_reason, member_count, post_count, deleted, create_time, update_time
+<==        Row: 1, 72, ÖÜ½ÜÂ×·ÛË¿, ÖÜ½ÜÂ×·ÛË¿À´, null, 1, null, 2, 1, 0, 2026-09-07 20:54:17, 2026-09-07 23:09:21
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@430c6d3b]

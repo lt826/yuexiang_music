@@ -1,0 +1,46 @@
+HELP.md
+target/
+.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code ###
+.vscode/
+
+# 环境变量（含密码/密钥，禁止入库）
+.env
+# Sentinel dashboard 运行日志
+sentinel-dashboard/dashboard.log
+
+# 文件存储目录：file 服务运行时读 Docker 卷，仓库内为历史遗留（2026-08-31 移出跟踪）
+data/
+# 第三方发行 jar 不入库（sentinel 控制台）
+sentinel-dashboard/*.jar
+
+### 音频/封面迁移包（export-media.sh 产物，309MB 不进 git）###
+media.tar.gz

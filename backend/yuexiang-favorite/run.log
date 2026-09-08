@@ -1,0 +1,438 @@
+2026-09-07T22:23:21.550+08:00  INFO 2632 --- [yuexiang-favorite] [           main] c.a.nacos.client.logging.NacosLogging    : Nacos Logging Adapter Builder: com.alibaba.nacos.logger.adapter.logback12.LogbackNacosLoggingAdapterBuilder
+2026-09-07T22:23:21.567+08:00  INFO 2632 --- [yuexiang-favorite] [           main] c.a.nacos.client.logging.NacosLogging    : Nacos Logging Adapter Builder: com.alibaba.nacos.logger.adapter.logback14.LogbackNacosLoggingAdapterBuilder
+2026-09-07T22:23:21.569+08:00  INFO 2632 --- [yuexiang-favorite] [           main] c.a.nacos.client.logging.NacosLogging    : Nacos Logging Adapter: com.alibaba.nacos.logger.adapter.logback14.LogbackNacosLoggingAdapter match ch.qos.logback.classic.Logger success.
+2026-09-07T22:23:21.585+08:00  INFO 2632 --- [yuexiang-favorite] [           main] c.a.nacos.client.logging.NacosLogging    : Nacos Logging Adapter Builder: com.alibaba.nacos.logger.adapter.log4j2.Log4j2NacosLoggingAdapterBuilder
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::               (v3.2.12)
+
+2026-09-07T22:23:22.056+08:00  INFO 2632 --- [yuexiang-favorite] [           main] c.q.y.f.YuexiangFavoriteApplication      : Starting YuexiangFavoriteApplication v0.0.1-SNAPSHOT using Java 17.0.17 with PID 2632 (D:\桌面应用\yuexiang_project\yuexiang_backed\yuexiang-favorite\target\yuexiang-favorite-0.0.1-SNAPSHOT.jar started by 86191 in D:\桌面应用\yuexiang_project\yuexiang_backed)
+2026-09-07T22:23:22.058+08:00 DEBUG 2632 --- [yuexiang-favorite] [           main] c.q.y.f.YuexiangFavoriteApplication      : Running with Spring Boot v3.2.12, Spring v6.1.15
+2026-09-07T22:23:22.061+08:00  INFO 2632 --- [yuexiang-favorite] [           main] c.q.y.f.YuexiangFavoriteApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-09-07T22:23:24.309+08:00  INFO 2632 --- [yuexiang-favorite] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-09-07T22:23:24.317+08:00  INFO 2632 --- [yuexiang-favorite] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-09-07T22:23:24.367+08:00  INFO 2632 --- [yuexiang-favorite] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
+2026-09-07T22:23:25.031+08:00  INFO 2632 --- [yuexiang-favorite] [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=8f3850b8-52f7-3118-9f36-f9ac7067de44
+2026-09-07T22:23:25.535+08:00  WARN 2632 --- [yuexiang-favorite] [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2026-09-07T22:23:25.542+08:00  WARN 2632 --- [yuexiang-favorite] [           main] trationDelegate$BeanPostProcessorChecker : Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2026-09-07T22:23:26.757+08:00  INFO 2632 --- [yuexiang-favorite] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8085 (http)
+2026-09-07T22:23:26.913+08:00  INFO 2632 --- [yuexiang-favorite] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-09-07T22:23:26.916+08:00  INFO 2632 --- [yuexiang-favorite] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2026-09-07T22:23:27.217+08:00  INFO 2632 --- [yuexiang-favorite] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-09-07T22:23:27.227+08:00  INFO 2632 --- [yuexiang-favorite] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4975 ms
+Logging initialized using 'class org.apache.ibatis.logging.stdout.StdOutImpl' adapter.
+Get /172.26.240.1 network interface 
+Get network interface info: name:eth19 (Hyper-V Virtual Ethernet Adapter)
+Initialization Sequence datacenterId:20 workerId:1
+ _ _   |_  _ _|_. ___ _ |    _ 
+| | |\/|_)(_| | |_\  |_)||_|_\ 
+     /               |         
+                        3.5.7 
+2026-09-07T22:23:31.372+08:00  INFO 2632 --- [yuexiang-favorite] [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'yuexiang-song' URL not provided. Will try picking an instance via load-balancing.
+2026-09-07T22:23:34.262+08:00  INFO 2632 --- [yuexiang-favorite] [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'yuexiang-singer' URL not provided. Will try picking an instance via load-balancing.
+2026-09-07T22:23:36.796+08:00  WARN 2632 --- [yuexiang-favorite] [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-09-07T22:23:36.885+08:00  INFO 2632 --- [yuexiang-favorite] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8085 (http) with context path ''
+2026-09-07T22:23:36.932+08:00  INFO 2632 --- [yuexiang-favorite] [           main] c.a.n.p.a.s.c.ClientAuthPluginManager    : [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2026-09-07T22:23:36.933+08:00  INFO 2632 --- [yuexiang-favorite] [           main] c.a.n.p.a.s.c.ClientAuthPluginManager    : [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2026-09-07T22:23:38.095+08:00  INFO 2632 --- [yuexiang-favorite] [           main] c.a.n.c.a.AbstractAbilityControlManager  : Ready to get current node abilities...
+2026-09-07T22:23:38.098+08:00  INFO 2632 --- [yuexiang-favorite] [           main] c.a.n.c.a.AbstractAbilityControlManager  : Ready to initialize current node abilities, support modes: [SDK_CLIENT]
+2026-09-07T22:23:38.099+08:00  INFO 2632 --- [yuexiang-favorite] [           main] c.a.n.c.a.AbstractAbilityControlManager  : Initialize current abilities finish...
+2026-09-07T22:23:38.100+08:00  INFO 2632 --- [yuexiang-favorite] [           main] c.a.n.c.a.d.NacosAbilityManagerHolder    : [AbilityControlManager] Successfully initialize AbilityControlManager
+2026-09-07T22:23:38.144+08:00  INFO 2632 --- [yuexiang-favorite] [           main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP yuexiang-favorite 192.168.31.210:8085 register finished
+2026-09-07T22:23:38.314+08:00  INFO 2632 --- [yuexiang-favorite] [           main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [127.0.0.1:5672]
+2026-09-07T22:23:38.384+08:00  INFO 2632 --- [yuexiang-favorite] [           main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#5f67181f:0/SimpleConnection@f348e10 [delegate=amqp://guest@127.0.0.1:5672/, localPort=61521]
+2026-09-07T22:23:38.479+08:00  INFO 2632 --- [yuexiang-favorite] [           main] c.q.y.f.YuexiangFavoriteApplication      : Started YuexiangFavoriteApplication in 18.051 seconds (process running for 19.621)
+2026-09-07T23:08:26.998+08:00  INFO 2632 --- [yuexiang-favorite] [nio-8085-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-09-07T23:08:27.002+08:00  INFO 2632 --- [yuexiang-favorite] [nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-09-07T23:08:27.031+08:00  INFO 2632 --- [yuexiang-favorite] [nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 28 ms
+Creating a new SqlSession
+Creating a new SqlSession
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@48e3293c] was not registered for synchronization because synchronization is not active
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6ca9a4c3] was not registered for synchronization because synchronization is not active
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4afbb640] was not registered for synchronization because synchronization is not active
+2026-09-07T23:08:27.420+08:00  INFO 2632 --- [yuexiang-favorite] [nio-8085-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-09-07T23:08:27.779+08:00  INFO 2632 --- [yuexiang-favorite] [nio-8085-exec-2] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@56957d58
+2026-09-07T23:08:27.784+08:00  INFO 2632 --- [yuexiang-favorite] [nio-8085-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+JDBC Connection [HikariProxyConnection@1213717915 wrapping com.mysql.cj.jdbc.ConnectionImpl@56957d58] will not be managed by Spring
+JDBC Connection [HikariProxyConnection@1809737195 wrapping com.mysql.cj.jdbc.ConnectionImpl@f482117] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,song_id,listen_time FROM listen_history WHERE (user_id = ?) ORDER BY listen_time DESC LIMIT 250
+==>  Preparing: SELECT id,user_id,song_id,listen_time FROM listen_history WHERE (user_id = ?) ORDER BY listen_time DESC LIMIT 50
+JDBC Connection [HikariProxyConnection@1955533720 wrapping com.mysql.cj.jdbc.ConnectionImpl@40e3af0a] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,song_id,create_time FROM favorite_song WHERE (user_id = ?)
+==> Parameters: 74(Long)
+==> Parameters: 74(Long)
+==> Parameters: 74(Long)
+<==      Total: 0
+<==    Columns: id, user_id, song_id, listen_time
+<==    Columns: id, user_id, song_id, listen_time
+<==        Row: 116, 74, 95, 2026-09-07 22:17:56
+<==        Row: 116, 74, 95, 2026-09-07 22:17:56
+<==      Total: 1
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@48e3293c]
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4afbb640]
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6ca9a4c3]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5ff9fc87] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@452688156 wrapping com.mysql.cj.jdbc.ConnectionImpl@56957d58] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,song_id,create_time FROM favorite_song WHERE (user_id = ?)
+==> Parameters: 74(Long)
+<==      Total: 0
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5ff9fc87]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@384584c9] was not registered for synchronization because synchronization is not active
+Creating a new SqlSession
+JDBC Connection [HikariProxyConnection@914521521 wrapping com.mysql.cj.jdbc.ConnectionImpl@56957d58] will not be managed by Spring
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@63b56e17] was not registered for synchronization because synchronization is not active
+==>  Preparing: SELECT id,user_id,song_id,listen_time FROM listen_history WHERE (user_id = ?) ORDER BY listen_time DESC LIMIT 250
+==> Parameters: 74(Long)
+<==    Columns: id, user_id, song_id, listen_time
+<==        Row: 116, 74, 95, 2026-09-07 22:17:56
+Creating a new SqlSession
+JDBC Connection [HikariProxyConnection@743413290 wrapping com.mysql.cj.jdbc.ConnectionImpl@f482117] will not be managed by Spring
+<==      Total: 1
+==>  Preparing: SELECT id,user_id,song_id,listen_time FROM listen_history WHERE (user_id = ?) ORDER BY listen_time DESC LIMIT 50
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@610147b2] was not registered for synchronization because synchronization is not active
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@384584c9]
+==> Parameters: 74(Long)
+JDBC Connection [HikariProxyConnection@1875293666 wrapping com.mysql.cj.jdbc.ConnectionImpl@56957d58] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,song_id,create_time FROM favorite_song WHERE (user_id = ?)
+<==    Columns: id, user_id, song_id, listen_time
+==> Parameters: 74(Long)
+<==        Row: 116, 74, 95, 2026-09-07 22:17:56
+<==      Total: 1
+<==      Total: 0
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@63b56e17]
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@610147b2]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5ff40555] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1362358491 wrapping com.mysql.cj.jdbc.ConnectionImpl@56957d58] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,song_id,create_time FROM favorite_song WHERE (user_id = ?)
+==> Parameters: 74(Long)
+<==      Total: 0
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5ff40555]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2d9cff34] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@299665504 wrapping com.mysql.cj.jdbc.ConnectionImpl@40e3af0a] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,song_id,create_time FROM favorite_song WHERE (user_id = ?)
+==> Parameters: 74(Long)
+<==      Total: 0
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2d9cff34]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@8b76577] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@709681282 wrapping com.mysql.cj.jdbc.ConnectionImpl@56957d58] will not be managed by Spring
+==>  Preparing: INSERT INTO listen_history ( user_id, song_id ) VALUES ( ?, ? )
+==> Parameters: 74(Long), 43(Long)
+<==    Updates: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@8b76577]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@10fe6a40] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@321847091 wrapping com.mysql.cj.jdbc.ConnectionImpl@f482117] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,song_id,listen_time FROM listen_history WHERE (user_id = ?) ORDER BY listen_time DESC LIMIT 250
+==> Parameters: 74(Long)
+<==    Columns: id, user_id, song_id, listen_time
+<==        Row: 117, 74, 43, 2026-09-07 23:09:34
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@67181cd4] was not registered for synchronization because synchronization is not active
+<==        Row: 116, 74, 95, 2026-09-07 22:17:56
+JDBC Connection [HikariProxyConnection@1711614763 wrapping com.mysql.cj.jdbc.ConnectionImpl@56957d58] will not be managed by Spring
+<==      Total: 2
+==>  Preparing: SELECT id,user_id,song_id,listen_time FROM listen_history WHERE (user_id = ?) ORDER BY listen_time DESC LIMIT 50
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@10fe6a40]
+==> Parameters: 74(Long)
+<==    Columns: id, user_id, song_id, listen_time
+<==        Row: 117, 74, 43, 2026-09-07 23:09:34
+<==        Row: 116, 74, 95, 2026-09-07 22:17:56
+<==      Total: 2
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@67181cd4]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2babe784] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@992357298 wrapping com.mysql.cj.jdbc.ConnectionImpl@56957d58] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,song_id,create_time FROM favorite_song WHERE (user_id = ?)
+==> Parameters: 74(Long)
+<==      Total: 0
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2babe784]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6809d445] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1724790580 wrapping com.mysql.cj.jdbc.ConnectionImpl@56957d58] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,song_id,create_time FROM favorite_song WHERE (user_id = ?)
+==> Parameters: 74(Long)
+<==      Total: 0
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6809d445]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@62ae41c1] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1720834380 wrapping com.mysql.cj.jdbc.ConnectionImpl@56957d58] will not be managed by Spring
+==>  Preparing: INSERT INTO listen_history ( user_id, song_id ) VALUES ( ?, ? )
+==> Parameters: 74(Long), 43(Long)
+<==    Updates: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@62ae41c1]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2efbbfd9] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1168916835 wrapping com.mysql.cj.jdbc.ConnectionImpl@56957d58] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,song_id,create_time FROM favorite_song WHERE (user_id = ?)
+==> Parameters: 74(Long)
+<==      Total: 0
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2efbbfd9]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@100efae0] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1865390873 wrapping com.mysql.cj.jdbc.ConnectionImpl@56957d58] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,song_id,create_time FROM favorite_song WHERE (user_id = ?)
+==> Parameters: 74(Long)
+<==      Total: 0
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@100efae0]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@52d29754] was not registered for synchronization because synchronization is not active
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@378117a0] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1277597878 wrapping com.mysql.cj.jdbc.ConnectionImpl@f482117] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,song_id,listen_time FROM listen_history WHERE (user_id = ?) ORDER BY listen_time DESC LIMIT 250
+==> Parameters: 72(Long)
+<==    Columns: id, user_id, song_id, listen_time
+<==        Row: 115, 72, 72, 2026-09-07 21:26:00
+JDBC Connection [HikariProxyConnection@1496284088 wrapping com.mysql.cj.jdbc.ConnectionImpl@56957d58] will not be managed by Spring
+<==        Row: 113, 72, 43, 2026-09-07 15:46:47
+==>  Preparing: SELECT id,user_id,song_id,listen_time FROM listen_history WHERE (user_id = ?) ORDER BY listen_time DESC LIMIT 50
+<==        Row: 112, 72, 43, 2026-09-07 15:46:21
+==> Parameters: 72(Long)
+<==        Row: 111, 72, 71, 2026-09-07 14:56:21
+<==    Columns: id, user_id, song_id, listen_time
+<==        Row: 110, 72, 45, 2026-09-07 14:55:31
+<==        Row: 115, 72, 72, 2026-09-07 21:26:00
+<==        Row: 109, 72, 89, 2026-09-07 14:54:19
+<==        Row: 113, 72, 43, 2026-09-07 15:46:47
+<==        Row: 108, 72, 88, 2026-09-07 14:44:11
+<==        Row: 112, 72, 43, 2026-09-07 15:46:21
+<==        Row: 106, 72, 43, 2026-08-31 21:35:25
+Creating a new SqlSession
+<==        Row: 105, 72, 43, 2026-08-31 21:27:01
+<==        Row: 111, 72, 71, 2026-09-07 14:56:21
+<==        Row: 104, 72, 43, 2026-08-31 21:23:48
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5e306aa1] was not registered for synchronization because synchronization is not active
+<==        Row: 103, 72, 95, 2026-08-31 21:22:20
+<==        Row: 110, 72, 45, 2026-09-07 14:55:31
+<==      Total: 11
+JDBC Connection [HikariProxyConnection@710091044 wrapping com.mysql.cj.jdbc.ConnectionImpl@40e3af0a] will not be managed by Spring
+<==        Row: 109, 72, 89, 2026-09-07 14:54:19
+==>  Preparing: SELECT id,user_id,song_id,create_time FROM favorite_song WHERE (user_id = ?)
+==> Parameters: 72(Long)
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@52d29754]
+<==        Row: 108, 72, 88, 2026-09-07 14:44:11
+<==        Row: 106, 72, 43, 2026-08-31 21:35:25
+<==    Columns: id, user_id, song_id, create_time
+<==        Row: 105, 72, 43, 2026-08-31 21:27:01
+<==        Row: 7, 72, 44, 2026-09-07 14:55:41
+<==        Row: 4, 72, 61, 2026-08-31 15:43:24
+<==        Row: 104, 72, 43, 2026-08-31 21:23:48
+<==        Row: 6, 72, 88, 2026-09-07 11:09:22
+<==        Row: 103, 72, 95, 2026-08-31 21:22:20
+<==        Row: 5, 72, 92, 2026-08-31 15:44:11
+<==      Total: 11
+<==      Total: 4
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@378117a0]
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5e306aa1]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@27f33d0f] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@33451592 wrapping com.mysql.cj.jdbc.ConnectionImpl@56957d58] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,song_id,create_time FROM favorite_song WHERE (user_id = ?)
+==> Parameters: 72(Long)
+<==    Columns: id, user_id, song_id, create_time
+<==        Row: 7, 72, 44, 2026-09-07 14:55:41
+<==        Row: 4, 72, 61, 2026-08-31 15:43:24
+<==        Row: 6, 72, 88, 2026-09-07 11:09:22
+<==        Row: 5, 72, 92, 2026-08-31 15:44:11
+<==      Total: 4
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@27f33d0f]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7e536eeb] was not registered for synchronization because synchronization is not active
+Creating a new SqlSession
+JDBC Connection [HikariProxyConnection@1906177837 wrapping com.mysql.cj.jdbc.ConnectionImpl@56957d58] will not be managed by Spring
+==>  Preparing: INSERT INTO listen_history ( user_id, song_id ) VALUES ( ?, ? )
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@17b0bb7e] was not registered for synchronization because synchronization is not active
+==> Parameters: 72(Long), 95(Long)
+JDBC Connection [HikariProxyConnection@427251704 wrapping com.mysql.cj.jdbc.ConnectionImpl@f482117] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,song_id,create_time FROM favorite_song WHERE (user_id = ?)
+==> Parameters: 72(Long)
+<==    Updates: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7e536eeb]
+<==    Columns: id, user_id, song_id, create_time
+<==        Row: 7, 72, 44, 2026-09-07 14:55:41
+<==        Row: 4, 72, 61, 2026-08-31 15:43:24
+<==        Row: 6, 72, 88, 2026-09-07 11:09:22
+<==        Row: 5, 72, 92, 2026-08-31 15:44:11
+<==      Total: 4
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@17b0bb7e]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@46024045] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@463449883 wrapping com.mysql.cj.jdbc.ConnectionImpl@56957d58] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,song_id,create_time FROM favorite_song WHERE (user_id = ?) ORDER BY create_time DESC
+==> Parameters: 72(Long)
+<==    Columns: id, user_id, song_id, create_time
+<==        Row: 7, 72, 44, 2026-09-07 14:55:41
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4c606965] was not registered for synchronization because synchronization is not active
+<==        Row: 6, 72, 88, 2026-09-07 11:09:22
+<==        Row: 5, 72, 92, 2026-08-31 15:44:11
+<==        Row: 4, 72, 61, 2026-08-31 15:43:24
+JDBC Connection [HikariProxyConnection@1020338443 wrapping com.mysql.cj.jdbc.ConnectionImpl@f482117] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,song_id,listen_time FROM listen_history WHERE (user_id = ?) ORDER BY listen_time DESC LIMIT 0, 50
+==> Parameters: 72(Long)
+<==      Total: 4
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@46024045]
+<==    Columns: id, user_id, song_id, listen_time
+<==        Row: 119, 72, 95, 2026-09-07 23:16:22
+<==        Row: 115, 72, 72, 2026-09-07 21:26:00
+<==        Row: 113, 72, 43, 2026-09-07 15:46:47
+<==        Row: 112, 72, 43, 2026-09-07 15:46:21
+<==        Row: 111, 72, 71, 2026-09-07 14:56:21
+<==        Row: 110, 72, 45, 2026-09-07 14:55:31
+<==        Row: 109, 72, 89, 2026-09-07 14:54:19
+<==        Row: 108, 72, 88, 2026-09-07 14:44:11
+<==        Row: 106, 72, 43, 2026-08-31 21:35:25
+<==        Row: 105, 72, 43, 2026-08-31 21:27:01
+<==        Row: 104, 72, 43, 2026-08-31 21:23:48
+<==        Row: 103, 72, 95, 2026-08-31 21:22:20
+<==      Total: 12
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4c606965]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@79644703] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1885003097 wrapping com.mysql.cj.jdbc.ConnectionImpl@56957d58] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,playlist_id,create_time FROM favorite_playlist WHERE (user_id = ?) ORDER BY create_time DESC
+==> Parameters: 72(Long)
+<==      Total: 0
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@79644703]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@63c5afe1] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1657298149 wrapping com.mysql.cj.jdbc.ConnectionImpl@56957d58] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,song_id,create_time FROM favorite_song WHERE (user_id = ?)
+==> Parameters: 72(Long)
+<==    Columns: id, user_id, song_id, create_time
+<==        Row: 7, 72, 44, 2026-09-07 14:55:41
+<==        Row: 4, 72, 61, 2026-08-31 15:43:24
+<==        Row: 6, 72, 88, 2026-09-07 11:09:22
+<==        Row: 5, 72, 92, 2026-08-31 15:44:11
+<==      Total: 4
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@63c5afe1]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@43bcb4b5] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@378313953 wrapping com.mysql.cj.jdbc.ConnectionImpl@56957d58] will not be managed by Spring
+==>  Preparing: INSERT INTO listen_history ( user_id, song_id ) VALUES ( ?, ? )
+==> Parameters: 72(Long), 43(Long)
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7e83a399] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1688752347 wrapping com.mysql.cj.jdbc.ConnectionImpl@40e3af0a] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,song_id,create_time FROM favorite_song WHERE (user_id = ?)
+<==    Updates: 1
+==> Parameters: 72(Long)
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@43bcb4b5]
+<==    Columns: id, user_id, song_id, create_time
+<==        Row: 7, 72, 44, 2026-09-07 14:55:41
+<==        Row: 4, 72, 61, 2026-08-31 15:43:24
+<==        Row: 6, 72, 88, 2026-09-07 11:09:22
+<==        Row: 5, 72, 92, 2026-08-31 15:44:11
+<==      Total: 4
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7e83a399]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7f851c11] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@251140195 wrapping com.mysql.cj.jdbc.ConnectionImpl@1548d061] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,song_id,create_time FROM favorite_song WHERE (user_id = ?)
+==> Parameters: 72(Long)
+<==    Columns: id, user_id, song_id, create_time
+<==        Row: 7, 72, 44, 2026-09-07 14:55:41
+<==        Row: 4, 72, 61, 2026-08-31 15:43:24
+<==        Row: 6, 72, 88, 2026-09-07 11:09:22
+<==        Row: 5, 72, 92, 2026-08-31 15:44:11
+<==      Total: 4
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7f851c11]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@58ade44] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@456156487 wrapping com.mysql.cj.jdbc.ConnectionImpl@243f432e] will not be managed by Spring
+==>  Preparing: INSERT INTO listen_history ( user_id, song_id ) VALUES ( ?, ? )
+==> Parameters: 72(Long), 43(Long)
+<==    Updates: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@58ade44]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7b8dc48f] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1570467506 wrapping com.mysql.cj.jdbc.ConnectionImpl@243f432e] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,song_id,create_time FROM favorite_song WHERE (user_id = ?)
+==> Parameters: 72(Long)
+<==    Columns: id, user_id, song_id, create_time
+<==        Row: 7, 72, 44, 2026-09-07 14:55:41
+<==        Row: 4, 72, 61, 2026-08-31 15:43:24
+<==        Row: 6, 72, 88, 2026-09-07 11:09:22
+<==        Row: 5, 72, 92, 2026-08-31 15:44:11
+<==      Total: 4
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7b8dc48f]
+2026-09-07T23:57:45.405+08:00 ERROR 2632 --- [yuexiang-favorite] [nio-8085-exec-3] c.q.y.c.e.GlobalExceptionHandler         : 系统异常: 
+
+org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favorite/ping.
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:586) ~[spring-webmvc-6.1.15.jar!/:6.1.15]
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:52) ~[spring-webmvc-6.1.15.jar!/:6.1.15]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.15.jar!/:6.1.15]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.15.jar!/:6.1.15]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.15.jar!/:6.1.15]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.15.jar!/:6.1.15]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.33.jar!/:na]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.15.jar!/:6.1.15]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.33.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.33.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.33.jar!/:na]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.33.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.33.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.33.jar!/:na]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.15.jar!/:6.1.15]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.15.jar!/:6.1.15]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.33.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.33.jar!/:na]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.15.jar!/:6.1.15]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.15.jar!/:6.1.15]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.33.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.33.jar!/:na]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.15.jar!/:6.1.15]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.15.jar!/:6.1.15]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.33.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.33.jar!/:na]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.33.jar!/:na]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.33.jar!/:na]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.33.jar!/:na]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.33.jar!/:na]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.33.jar!/:na]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.33.jar!/:na]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.33.jar!/:na]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-10.1.33.jar!/:na]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.33.jar!/:na]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.33.jar!/:na]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.33.jar!/:na]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.33.jar!/:na]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.33.jar!/:na]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.33.jar!/:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.33.jar!/:na]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@56301a49] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@24609757 wrapping com.mysql.cj.jdbc.ConnectionImpl@2ed5eac5] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,song_id,listen_time FROM listen_history WHERE (user_id = ?) ORDER BY listen_time DESC LIMIT 250
+==> Parameters: 2(Long)
+<==      Total: 0
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@56301a49]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7e9a182e] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@597823550 wrapping com.mysql.cj.jdbc.ConnectionImpl@2ed5eac5] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,song_id,create_time FROM favorite_song WHERE (user_id = ?)
+==> Parameters: 2(Long)
+<==      Total: 0
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7e9a182e]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@79799325] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1205649984 wrapping com.mysql.cj.jdbc.ConnectionImpl@2ed5eac5] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,song_id,listen_time FROM listen_history WHERE (user_id = ?) ORDER BY listen_time DESC LIMIT 15
+==> Parameters: 2(Long)
+<==      Total: 0
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@79799325]
+2026-09-08T08:47:46.884+08:00  WARN 2632 --- [yuexiang-favorite] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m10s131ms70?s400ns).
