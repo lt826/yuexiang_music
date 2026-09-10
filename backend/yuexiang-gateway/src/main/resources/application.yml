@@ -1,0 +1,113 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: yuexiang-gateway
+  data:
+    redis:
+      host: ${SPRING_DATA_REDIS_HOST:127.0.0.1}
+      port: 6379
+      timeout: 2s
+
+# Sentinel：控制台地址（本机未启动 dashboard 时自动重试连接，不影响服务）
+  sentinel:
+    transport:
+      dashboard: ${SENTINEL_DASHBOARD:localhost:8858}
+      port: 8719
+    eager: true   # 启动即注册到控制台，提前暴露资源
+    web-context-unify: false   # 网关下各路由独立统计
+  cloud:
+    nacos:
+      discovery:
+        fail-fast: false
+        server-addr: ${NACOS_HOST:127.0.0.1}:8848
+    gateway:
+      routes:
+        # lb:// 走 Nacos 服务发现 + LoadBalancer，本机与 Docker 均可用
+        # StripPrefix=1：/api/user/login → /user/login，与说明书接口路径一致
+        - id: user-route
+          uri: lb://yuexiang-user
+          predicates:
+            - Path=/api/user/**
+          filters:
+            - StripPrefix=1
+        - id: song-route
+          uri: lb://yuexiang-song
+          predicates:
+            - Path=/api/song/**
+          filters:
+            - StripPrefix=1
+        - id: singer-route
+          uri: lb://yuexiang-singer
+          predicates:
+            - Path=/api/singer/**
+          filters:
+            - StripPrefix=1
+        - id: playlist-route
+          uri: lb://yuexiang-playlist
+          predicates:
+            - Path=/api/playlist/**
+          filters:
+            - StripPrefix=1
+        - id: favorite-route
+          uri: lb://yuexiang-favorite
+          predicates:
+            - Path=/api/favorite/**
+          filters:
+            - StripPrefix=1
+        - id: message-route
+          uri: lb://yuexiang-message
+          predicates:
+            - Path=/api/message/**
+          filters:
+            - StripPrefix=1
+        - id: file-route
+          uri: lb://yuexiang-file
+          predicates:
+            - Path=/api/file/**
+          filters:
+            - StripPrefix=1
+        - id: admin-route
+          uri: lb://yuexiang-admin
+          predicates:
+            - Path=/api/admin/**
+          filters:
+            - StripPrefix=1
+        # AI 智能搜歌（登录用户可用，走统一鉴权；前端 axios timeout 已单独放宽）
+        - id: ai-route
+          uri: lb://yuexiang-ai
+          predicates:
+            - Path=/api/ai/**
+          filters:
+            - StripPrefix=1
+        # 一起听 WebSocket 握手通道：/api/circle/ws/listen/{roomId}?token= → /ws/listen/{roomId}
+        # ws scheme 由 Spring Cloud Gateway 自动识别升级；JWT 由握手拦截器校验（浏览器 WS 无法带 Authorization 头）
+        # 注意：必须放在 circle-route 之前，否则 /api/circle/** 会先截走 ws 握手请求
+        - id: circle-ws-route
+          uri: lb:ws://yuexiang-circle
+          predicates:
+            - Path=/api/circle/ws/**
+          filters:
+            - StripPrefix=2
+        # 乐坊（圈子 & 一起听）：浏览匿名可看（白名单），发帖/加入房间需登录
+        - id: circle-route
+          uri: lb://yuexiang-circle
+          predicates:
+            - Path=/api/circle/**
+          filters:
+            - StripPrefix=1
+
+logging:
+  level:
+    org.springframework.cloud.gateway: info
+
+# 跨域：前端开发期走 vite 代理（同源），此处兜底直连网关的场景
+spring.cloud.gateway.globalcors:
+  cors-configurations:
+    '[/**]':
+      allowedOriginPatterns: "*"
+      allowedMethods: "*"
+      allowedHeaders: "*"
+      allowCredentials: true
+      maxAge: 3600
