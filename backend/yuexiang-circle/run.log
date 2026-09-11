@@ -1,0 +1,115 @@
+2026-09-09T19:18:28.310+08:00  INFO 31400 --- [yuexiang-circle] [           main] c.a.nacos.client.logging.NacosLogging    : Nacos Logging Adapter Builder: com.alibaba.nacos.logger.adapter.logback12.LogbackNacosLoggingAdapterBuilder
+2026-09-09T19:18:28.319+08:00  INFO 31400 --- [yuexiang-circle] [           main] c.a.nacos.client.logging.NacosLogging    : Nacos Logging Adapter Builder: com.alibaba.nacos.logger.adapter.logback14.LogbackNacosLoggingAdapterBuilder
+2026-09-09T19:18:28.320+08:00  INFO 31400 --- [yuexiang-circle] [           main] c.a.nacos.client.logging.NacosLogging    : Nacos Logging Adapter: com.alibaba.nacos.logger.adapter.logback14.LogbackNacosLoggingAdapter match ch.qos.logback.classic.Logger success.
+2026-09-09T19:18:28.331+08:00  INFO 31400 --- [yuexiang-circle] [           main] c.a.nacos.client.logging.NacosLogging    : Nacos Logging Adapter Builder: com.alibaba.nacos.logger.adapter.log4j2.Log4j2NacosLoggingAdapterBuilder
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::               (v3.2.12)
+
+2026-09-09T19:18:28.543+08:00  INFO 31400 --- [yuexiang-circle] [           main] c.q.y.circle.YuexiangCircleApplication   : Starting YuexiangCircleApplication v0.0.1-SNAPSHOT using Java 17.0.17 with PID 31400 (D:\×ÀÃæÓ¦ÓÃ\yuexiang_project\yuexiang_backed\yuexiang-circle\target\yuexiang-circle-0.0.1-SNAPSHOT.jar started by 86191 in D:\×ÀÃæÓ¦ÓÃ\yuexiang_project\yuexiang_backed\yuexiang-circle)
+2026-09-09T19:18:28.544+08:00 DEBUG 31400 --- [yuexiang-circle] [           main] c.q.y.circle.YuexiangCircleApplication   : Running with Spring Boot v3.2.12, Spring v6.1.15
+2026-09-09T19:18:28.545+08:00  INFO 31400 --- [yuexiang-circle] [           main] c.q.y.circle.YuexiangCircleApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-09-09T19:18:29.509+08:00  INFO 31400 --- [yuexiang-circle] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-09-09T19:18:29.512+08:00  INFO 31400 --- [yuexiang-circle] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-09-09T19:18:29.530+08:00  INFO 31400 --- [yuexiang-circle] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+2026-09-09T19:18:29.761+08:00  INFO 31400 --- [yuexiang-circle] [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=79eb8132-c914-35b0-845f-7abe0701bbf1
+2026-09-09T19:18:29.997+08:00  WARN 31400 --- [yuexiang-circle] [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2026-09-09T19:18:30.002+08:00  WARN 31400 --- [yuexiang-circle] [           main] trationDelegate$BeanPostProcessorChecker : Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2026-09-09T19:18:30.291+08:00  INFO 31400 --- [yuexiang-circle] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8090 (http)
+2026-09-09T19:18:30.315+08:00  INFO 31400 --- [yuexiang-circle] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-09-09T19:18:30.315+08:00  INFO 31400 --- [yuexiang-circle] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2026-09-09T19:18:30.360+08:00  INFO 31400 --- [yuexiang-circle] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-09-09T19:18:30.361+08:00  INFO 31400 --- [yuexiang-circle] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1761 ms
+Logging initialized using 'class org.apache.ibatis.logging.stdout.StdOutImpl' adapter.
+Get /192.168.31.210 network interface 
+Get network interface info: name:wlan3 (Intel(R) Wi-Fi 6 AX101)
+Initialization Sequence datacenterId:16 workerId:17
+ _ _   |_  _ _|_. ___ _ |    _ 
+| | |\/|_)(_| | |_\  |_)||_|_\ 
+     /               |         
+                        3.5.7 
+2026-09-09T19:18:31.297+08:00  INFO 31400 --- [yuexiang-circle] [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'yuexiang-user' URL not provided. Will try picking an instance via load-balancing.
+2026-09-09T19:18:31.365+08:00  INFO 31400 --- [yuexiang-circle] [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'yuexiang-message' URL not provided. Will try picking an instance via load-balancing.
+2026-09-09T19:18:31.836+08:00  INFO 31400 --- [yuexiang-circle] [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'yuexiang-song' URL not provided. Will try picking an instance via load-balancing.
+2026-09-09T19:18:32.694+08:00  WARN 31400 --- [yuexiang-circle] [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-09-09T19:18:32.741+08:00  INFO 31400 --- [yuexiang-circle] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8090 (http) with context path ''
+2026-09-09T19:18:32.793+08:00  INFO 31400 --- [yuexiang-circle] [           main] c.a.n.p.a.s.c.ClientAuthPluginManager    : [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2026-09-09T19:18:32.794+08:00  INFO 31400 --- [yuexiang-circle] [           main] c.a.n.p.a.s.c.ClientAuthPluginManager    : [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2026-09-09T19:18:33.741+08:00  INFO 31400 --- [yuexiang-circle] [           main] c.a.n.c.a.AbstractAbilityControlManager  : Ready to get current node abilities...
+2026-09-09T19:18:33.746+08:00  INFO 31400 --- [yuexiang-circle] [           main] c.a.n.c.a.AbstractAbilityControlManager  : Ready to initialize current node abilities, support modes: [SDK_CLIENT]
+2026-09-09T19:18:33.748+08:00  INFO 31400 --- [yuexiang-circle] [           main] c.a.n.c.a.AbstractAbilityControlManager  : Initialize current abilities finish...
+2026-09-09T19:18:33.748+08:00  INFO 31400 --- [yuexiang-circle] [           main] c.a.n.c.a.d.NacosAbilityManagerHolder    : [AbilityControlManager] Successfully initialize AbilityControlManager
+2026-09-09T19:18:33.780+08:00  INFO 31400 --- [yuexiang-circle] [           main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP yuexiang-circle 192.168.31.210:8090 register finished
+2026-09-09T19:18:33.865+08:00  INFO 31400 --- [yuexiang-circle] [           main] c.q.y.circle.YuexiangCircleApplication   : Started YuexiangCircleApplication in 6.131 seconds (process running for 6.668)
+2026-09-09T19:18:58.098+08:00  INFO 31400 --- [yuexiang-circle] [nio-8090-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-09-09T19:18:58.099+08:00  INFO 31400 --- [yuexiang-circle] [nio-8090-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-09-09T19:18:58.100+08:00  INFO 31400 --- [yuexiang-circle] [nio-8090-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@58ef76fb] was not registered for synchronization because synchronization is not active
+2026-09-09T19:18:58.185+08:00  INFO 31400 --- [yuexiang-circle] [nio-8090-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-09-09T19:18:58.366+08:00  INFO 31400 --- [yuexiang-circle] [nio-8090-exec-2] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@526c40a1
+2026-09-09T19:18:58.367+08:00  INFO 31400 --- [yuexiang-circle] [nio-8090-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+JDBC Connection [HikariProxyConnection@1361836314 wrapping com.mysql.cj.jdbc.ConnectionImpl@526c40a1] will not be managed by Spring
+==>  Preparing: SELECT id,creator_id,name,description,cover,status,reject_reason,member_count,post_count,deleted,create_time,update_time FROM circle WHERE deleted=0 AND (status = ?) ORDER BY member_count DESC,create_time DESC LIMIT 5
+==> Parameters: 1(Integer)
+<==    Columns: id, creator_id, name, description, cover, status, reject_reason, member_count, post_count, deleted, create_time, update_time
+<==        Row: 1, 72, ÖÜ½ÜÂ×·ÛË¿, ÖÜ½ÜÂ×·ÛË¿À´, null, 1, null, 2, 1, 0, 2026-09-07 20:54:17, 2026-09-07 23:09:21
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@58ef76fb]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@789a9dcc] was not registered for synchronization because synchronization is not active
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5e169812] was not registered for synchronization because synchronization is not active
+Creating a new SqlSession
+JDBC Connection [HikariProxyConnection@525241945 wrapping com.mysql.cj.jdbc.ConnectionImpl@526c40a1] will not be managed by Spring
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5a7ec169] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1512642312 wrapping com.mysql.cj.jdbc.ConnectionImpl@1f2b9229] will not be managed by Spring
+==>  Preparing: SELECT id,creator_id,name,description,cover,status,reject_reason,member_count,post_count,deleted,create_time,update_time FROM circle WHERE deleted=0 AND (status = ?) ORDER BY member_count DESC,create_time DESC LIMIT 50
+==>  Preparing: SELECT id,circle_id,user_id,role,create_time FROM circle_member WHERE (user_id = ?)
+JDBC Connection [HikariProxyConnection@1518576385 wrapping com.mysql.cj.jdbc.ConnectionImpl@fd81e82] will not be managed by Spring
+==> Parameters: 1(Integer)
+==> Parameters: 72(Long)
+==>  Preparing: SELECT id,circle_id,creator_id,theme,initial_song_id,status,deleted,create_time,update_time FROM listen_room WHERE deleted=0 AND (status = ?) ORDER BY create_time DESC LIMIT 6
+<==    Columns: id, creator_id, name, description, cover, status, reject_reason, member_count, post_count, deleted, create_time, update_time
+==> Parameters: 0(Integer)
+<==        Row: 1, 72, ÖÜ½ÜÂ×·ÛË¿, ÖÜ½ÜÂ×·ÛË¿À´, null, 1, null, 2, 1, 0, 2026-09-07 20:54:17, 2026-09-07 23:09:21
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@789a9dcc]
+<==    Columns: id, circle_id, user_id, role, create_time
+<==        Row: 3, 1, 72, OWNER, 2026-09-07 20:54:17
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5e169812]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3cfd1a0a] was not registered for synchronization because synchronization is not active
+<==      Total: 0
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5a7ec169]
+JDBC Connection [HikariProxyConnection@2068510427 wrapping com.mysql.cj.jdbc.ConnectionImpl@1f2b9229] will not be managed by Spring
+==>  Preparing: SELECT id,creator_id,name,description,cover,status,reject_reason,member_count,post_count,deleted,create_time,update_time FROM circle WHERE id IN ( ? ) AND deleted=0
+==> Parameters: 1(Long)
+<==    Columns: id, creator_id, name, description, cover, status, reject_reason, member_count, post_count, deleted, create_time, update_time
+<==        Row: 1, 72, ÖÜ½ÜÂ×·ÛË¿, ÖÜ½ÜÂ×·ÛË¿À´, null, 1, null, 2, 1, 0, 2026-09-07 20:54:17, 2026-09-07 23:09:21
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3cfd1a0a]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@77765e2b] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@239333479 wrapping com.mysql.cj.jdbc.ConnectionImpl@526c40a1] will not be managed by Spring
+==>  Preparing: SELECT id,circle_id,user_id,role,create_time FROM circle_member WHERE (user_id = ? AND circle_id IN (?))
+==> Parameters: 72(Long), 1(Long)
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@139aa117] was not registered for synchronization because synchronization is not active
+<==    Columns: id, circle_id, user_id, role, create_time
+<==        Row: 3, 1, 72, OWNER, 2026-09-07 20:54:17
+JDBC Connection [HikariProxyConnection@627618135 wrapping com.mysql.cj.jdbc.ConnectionImpl@1f2b9229] will not be managed by Spring
+<==      Total: 1
+==>  Preparing: SELECT id,circle_id,user_id,role,create_time FROM circle_member WHERE (user_id = ? AND circle_id IN (?))
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@77765e2b]
+==> Parameters: 72(Long), 1(Long)
+<==    Columns: id, circle_id, user_id, role, create_time
+<==        Row: 3, 1, 72, OWNER, 2026-09-07 20:54:17
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@139aa117]

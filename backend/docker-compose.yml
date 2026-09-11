@@ -1,0 +1,225 @@
+# ============================================================
+# 悦享音乐 docker-compose.yml
+# 前置：本机（或服务器宿主机）MySQL 和 Nacos 需在运行
+# 启动：docker compose up -d --build
+# 停止：docker compose down
+#
+# 网络说明：默认桥接网络，Java 服务经 host.docker.internal 访问
+# 宿主机上的 MySQL/Nacos/Redis/RabbitMQ。
+#   - Windows/Mac：Docker Desktop 原生解析该域名
+#   - Linux 服务器：由 extra_hosts 的 host-gateway 映射到宿主机网关
+# 两种环境行为一致，无需改配置。
+# SPRING_* 环境变量是 Spring Boot 规范覆盖名，直接压过 yml，
+# 不依赖 ${} 占位符解析。
+# ============================================================
+
+# 公共环境（YAML 锚点，各服务用 <<: *common-env 继承后按需覆盖）
+x-common-env: &common-env
+  NACOS_HOST: host.docker.internal
+  SPRING_CLOUD_SENTINEL_TRANSPORT_DASHBOARD: host.docker.internal:8858
+  SPRING_CLOUD_NACOS_DISCOVERY_SERVER_ADDR: host.docker.internal:8848
+  SPRING_CLOUD_NACOS_DISCOVERY_FAIL_FAST: "false"
+  SPRING_DATASOURCE_USERNAME: root
+  SPRING_DATASOURCE_PASSWORD: ${MYSQL_PASSWORD:-123456}
+
+x-mysql-url: &mysql-url
+  SPRING_DATASOURCE_URL: jdbc:mysql://host.docker.internal:3306/DB_NAME?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai&useSSL=false&allowPublicKeyRetrieval=true
+
+# Linux 容器内解析 host.docker.internal → 宿主机（Docker Desktop 下该配置无副作用）
+x-extra-hosts: &extra-hosts
+  extra_hosts:
+    - "host.docker.internal:host-gateway"
+
+services:
+  gateway:
+    <<: *extra-hosts
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        SERVICE_NAME: yuexiang-gateway
+    container_name: yuexiang-gateway
+    environment:
+      SPRING_CLOUD_NACOS_DISCOVERY_SERVER_ADDR: host.docker.internal:8848
+      SPRING_CLOUD_NACOS_DISCOVERY_FAIL_FAST: "false"
+      SPRING_DATA_REDIS_HOST: host.docker.internal
+      SPRING_CLOUD_SENTINEL_TRANSPORT_DASHBOARD: host.docker.internal:8858
+    # 网关容器内监听 8080（application.yml server.port），宿主机同端口对外
+    ports:
+      - "8080:8080"
+    restart: unless-stopped
+
+  user:
+    <<: *extra-hosts
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        SERVICE_NAME: yuexiang-user
+    container_name: yuexiang-user
+    environment:
+      <<: *common-env
+      SPRING_DATASOURCE_URL: jdbc:mysql://host.docker.internal:3306/yuexiang_user?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai&useSSL=false&allowPublicKeyRetrieval=true
+      SPRING_CLOUD_NACOS_CONFIG_SERVER_ADDR: host.docker.internal:8848
+      SPRING_DATA_REDIS_HOST: host.docker.internal
+    restart: unless-stopped
+
+  song:
+    <<: *extra-hosts
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        SERVICE_NAME: yuexiang-song
+    container_name: yuexiang-song
+    environment:
+      <<: *common-env
+      SPRING_DATASOURCE_URL: jdbc:mysql://host.docker.internal:3306/yuexiang_song?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai&useSSL=false&allowPublicKeyRetrieval=true
+      SPRING_RABBITMQ_HOST: host.docker.internal
+      SPRING_DATA_REDIS_HOST: host.docker.internal
+    restart: unless-stopped
+
+  singer:
+    <<: *extra-hosts
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        SERVICE_NAME: yuexiang-singer
+    container_name: yuexiang-singer
+    environment:
+      <<: *common-env
+      SPRING_DATASOURCE_URL: jdbc:mysql://host.docker.internal:3306/yuexiang_singer?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai&useSSL=false&allowPublicKeyRetrieval=true
+    restart: unless-stopped
+
+  playlist:
+    <<: *extra-hosts
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        SERVICE_NAME: yuexiang-playlist
+    container_name: yuexiang-playlist
+    environment:
+      <<: *common-env
+      SPRING_DATASOURCE_URL: jdbc:mysql://host.docker.internal:3306/yuexiang_playlist?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai&useSSL=false&allowPublicKeyRetrieval=true
+    restart: unless-stopped
+
+  favorite:
+    <<: *extra-hosts
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        SERVICE_NAME: yuexiang-favorite
+    container_name: yuexiang-favorite
+    environment:
+      <<: *common-env
+      SPRING_DATASOURCE_URL: jdbc:mysql://host.docker.internal:3306/yuexiang_favorite?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai&useSSL=false&allowPublicKeyRetrieval=true
+      SPRING_RABBITMQ_HOST: host.docker.internal
+      SPRING_DATA_REDIS_HOST: host.docker.internal
+    restart: unless-stopped
+
+  message:
+    <<: *extra-hosts
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        SERVICE_NAME: yuexiang-message
+    container_name: yuexiang-message
+    environment:
+      <<: *common-env
+      SPRING_DATASOURCE_URL: jdbc:mysql://host.docker.internal:3306/yuexiang_message?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai&useSSL=false&allowPublicKeyRetrieval=true
+      SPRING_RABBITMQ_HOST: host.docker.internal
+      SPRING_DATA_REDIS_HOST: host.docker.internal
+    restart: unless-stopped
+
+  admin:
+    <<: *extra-hosts
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        SERVICE_NAME: yuexiang-admin
+    container_name: yuexiang-admin
+    environment:
+      <<: *common-env
+      SPRING_DATASOURCE_URL: jdbc:mysql://host.docker.internal:3306/yuexiang_admin?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai&useSSL=false&allowPublicKeyRetrieval=true
+    restart: unless-stopped
+
+  ai:
+    <<: *extra-hosts
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        SERVICE_NAME: yuexiang-ai
+    container_name: yuexiang-ai
+    # AI 服务无数据库，仅需 Nacos 发现 + DeepSeek 密钥
+    # 密钥只从 .env 读取，缺失直接报错，不提供默认值
+    environment:
+      NACOS_HOST: host.docker.internal
+      SPRING_CLOUD_NACOS_DISCOVERY_SERVER_ADDR: host.docker.internal:8848
+      SPRING_CLOUD_NACOS_DISCOVERY_FAIL_FAST: "false"
+      SPRING_CLOUD_SENTINEL_TRANSPORT_DASHBOARD: host.docker.internal:8858
+      DEEPSEEK_API_KEY: ${DEEPSEEK_API_KEY:?请在 .env 中设置 DEEPSEEK_API_KEY}
+    restart: unless-stopped
+
+  circle:
+    <<: *extra-hosts
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        SERVICE_NAME: yuexiang-circle
+    container_name: yuexiang-circle
+    environment:
+      <<: *common-env
+      SPRING_DATASOURCE_URL: jdbc:mysql://host.docker.internal:3306/yuexiang_circle?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai&useSSL=false&allowPublicKeyRetrieval=true
+      SPRING_RABBITMQ_HOST: host.docker.internal
+      SPRING_DATA_REDIS_HOST: host.docker.internal
+    restart: unless-stopped
+
+  file:
+    <<: *extra-hosts
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        SERVICE_NAME: yuexiang-file
+    container_name: yuexiang-file
+    environment:
+      <<: *common-env
+      SPRING_DATASOURCE_URL: jdbc:mysql://host.docker.internal:3306/yuexiang_file?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai&useSSL=false&allowPublicKeyRetrieval=true
+    # 直接挂载宿主机 data 目录，容器与本地开发共用同一批上传文件，
+    # 之前在 IDEA 里上传的封面/歌曲在容器里也能访问
+    volumes:
+      - ./data/file:/app/data/file
+    restart: unless-stopped
+
+  redis:
+    image: redis:7
+    container_name: yuexiang-redis
+    ports:
+      - "6379:6379"
+    restart: unless-stopped
+
+  rabbitmq:
+    image: rabbitmq:3.13-management
+    container_name: yuexiang-rabbitmq
+    ports:
+      - "5672:5672"     # AMQP，Java 服务连接用
+      - "15672:15672"   # 管理界面 http://localhost:15672 (guest/guest)
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: ../yuexiang_fronted
+      dockerfile: Dockerfile
+    container_name: yuexiang-frontend
+    ports:
+      - "8082:80"
+    depends_on:
+      - gateway
+    restart: unless-stopped

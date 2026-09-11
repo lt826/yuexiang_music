@@ -1,0 +1,1101 @@
+2026-09-07T22:23:21.552+08:00  INFO 3764 --- [yuexiang-singer] [           main] c.a.nacos.client.logging.NacosLogging    : Nacos Logging Adapter Builder: com.alibaba.nacos.logger.adapter.logback12.LogbackNacosLoggingAdapterBuilder
+2026-09-07T22:23:21.571+08:00  INFO 3764 --- [yuexiang-singer] [           main] c.a.nacos.client.logging.NacosLogging    : Nacos Logging Adapter Builder: com.alibaba.nacos.logger.adapter.logback14.LogbackNacosLoggingAdapterBuilder
+2026-09-07T22:23:21.574+08:00  INFO 3764 --- [yuexiang-singer] [           main] c.a.nacos.client.logging.NacosLogging    : Nacos Logging Adapter: com.alibaba.nacos.logger.adapter.logback14.LogbackNacosLoggingAdapter match ch.qos.logback.classic.Logger success.
+2026-09-07T22:23:21.590+08:00  INFO 3764 --- [yuexiang-singer] [           main] c.a.nacos.client.logging.NacosLogging    : Nacos Logging Adapter Builder: com.alibaba.nacos.logger.adapter.log4j2.Log4j2NacosLoggingAdapterBuilder
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::               (v3.2.12)
+
+2026-09-07T22:23:22.080+08:00  INFO 3764 --- [yuexiang-singer] [           main] c.q.y.singer.YuexiangSingerApplication   : Starting YuexiangSingerApplication v0.0.1-SNAPSHOT using Java 17.0.17 with PID 3764 (D:\桌面应用\yuexiang_project\yuexiang_backed\yuexiang-singer\target\yuexiang-singer-0.0.1-SNAPSHOT.jar started by 86191 in D:\桌面应用\yuexiang_project\yuexiang_backed)
+2026-09-07T22:23:22.082+08:00 DEBUG 3764 --- [yuexiang-singer] [           main] c.q.y.singer.YuexiangSingerApplication   : Running with Spring Boot v3.2.12, Spring v6.1.15
+2026-09-07T22:23:22.084+08:00  INFO 3764 --- [yuexiang-singer] [           main] c.q.y.singer.YuexiangSingerApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-09-07T22:23:24.132+08:00  INFO 3764 --- [yuexiang-singer] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-09-07T22:23:24.142+08:00  INFO 3764 --- [yuexiang-singer] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-09-07T22:23:24.186+08:00  INFO 3764 --- [yuexiang-singer] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+2026-09-07T22:23:24.760+08:00  INFO 3764 --- [yuexiang-singer] [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=41753be4-8a71-3cc8-8d19-e738d72451df
+2026-09-07T22:23:25.445+08:00  WARN 3764 --- [yuexiang-singer] [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2026-09-07T22:23:25.452+08:00  WARN 3764 --- [yuexiang-singer] [           main] trationDelegate$BeanPostProcessorChecker : Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2026-09-07T22:23:26.400+08:00  INFO 3764 --- [yuexiang-singer] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8083 (http)
+2026-09-07T22:23:26.467+08:00  INFO 3764 --- [yuexiang-singer] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-09-07T22:23:26.470+08:00  INFO 3764 --- [yuexiang-singer] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2026-09-07T22:23:26.707+08:00  INFO 3764 --- [yuexiang-singer] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-09-07T22:23:26.713+08:00  INFO 3764 --- [yuexiang-singer] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4455 ms
+Logging initialized using 'class org.apache.ibatis.logging.stdout.StdOutImpl' adapter.
+Get /172.26.240.1 network interface 
+Get network interface info: name:eth19 (Hyper-V Virtual Ethernet Adapter)
+Initialization Sequence datacenterId:20 workerId:0
+ _ _   |_  _ _|_. ___ _ |    _ 
+| | |\/|_)(_| | |_\  |_)||_|_\ 
+     /               |         
+                        3.5.7 
+2026-09-07T22:23:30.951+08:00  INFO 3764 --- [yuexiang-singer] [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'yuexiang-user' URL not provided. Will try picking an instance via load-balancing.
+2026-09-07T22:23:31.228+08:00  INFO 3764 --- [yuexiang-singer] [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'yuexiang-message' URL not provided. Will try picking an instance via load-balancing.
+2026-09-07T22:23:31.323+08:00  INFO 3764 --- [yuexiang-singer] [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'yuexiang-song' URL not provided. Will try picking an instance via load-balancing.
+2026-09-07T22:23:36.033+08:00  WARN 3764 --- [yuexiang-singer] [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-09-07T22:23:36.126+08:00  INFO 3764 --- [yuexiang-singer] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8083 (http) with context path ''
+2026-09-07T22:23:36.238+08:00  INFO 3764 --- [yuexiang-singer] [           main] c.a.n.p.a.s.c.ClientAuthPluginManager    : [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2026-09-07T22:23:36.240+08:00  INFO 3764 --- [yuexiang-singer] [           main] c.a.n.p.a.s.c.ClientAuthPluginManager    : [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2026-09-07T22:23:37.556+08:00  INFO 3764 --- [yuexiang-singer] [           main] c.a.n.c.a.AbstractAbilityControlManager  : Ready to get current node abilities...
+2026-09-07T22:23:37.559+08:00  INFO 3764 --- [yuexiang-singer] [           main] c.a.n.c.a.AbstractAbilityControlManager  : Ready to initialize current node abilities, support modes: [SDK_CLIENT]
+2026-09-07T22:23:37.560+08:00  INFO 3764 --- [yuexiang-singer] [           main] c.a.n.c.a.AbstractAbilityControlManager  : Initialize current abilities finish...
+2026-09-07T22:23:37.561+08:00  INFO 3764 --- [yuexiang-singer] [           main] c.a.n.c.a.d.NacosAbilityManagerHolder    : [AbilityControlManager] Successfully initialize AbilityControlManager
+2026-09-07T22:23:37.615+08:00  INFO 3764 --- [yuexiang-singer] [           main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP yuexiang-singer 192.168.31.210:8083 register finished
+2026-09-07T22:23:37.907+08:00  INFO 3764 --- [yuexiang-singer] [           main] c.q.y.singer.YuexiangSingerApplication   : Started YuexiangSingerApplication in 17.447 seconds (process running for 19.069)
+2026-09-07T22:24:10.678+08:00  INFO 3764 --- [yuexiang-singer] [nio-8083-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-09-07T22:24:10.678+08:00  INFO 3764 --- [yuexiang-singer] [nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-09-07T22:24:10.680+08:00  INFO 3764 --- [yuexiang-singer] [nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@303e6287] was not registered for synchronization because synchronization is not active
+2026-09-07T22:24:10.751+08:00  INFO 3764 --- [yuexiang-singer] [nio-8083-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-09-07T22:24:10.908+08:00  INFO 3764 --- [yuexiang-singer] [nio-8083-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1df7648e
+2026-09-07T22:24:10.909+08:00  INFO 3764 --- [yuexiang-singer] [nio-8083-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+JDBC Connection [HikariProxyConnection@698645061 wrapping com.mysql.cj.jdbc.ConnectionImpl@1df7648e] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,name,avatar,introduction,status,reject_reason,deleted,create_time,update_time FROM singer WHERE id IN ( ? ) AND deleted=0
+==> Parameters: 30(Long)
+<==    Columns: id, user_id, name, avatar, introduction, status, reject_reason, deleted, create_time, update_time
+<==        Row: 30, null, Kira, null, 偶像流行歌手，舞台感染力强。, 1, null, 0, 2026-08-27 14:45:58, 2026-08-27 14:45:58
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@303e6287]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@18b3b602] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1875768130 wrapping com.mysql.cj.jdbc.ConnectionImpl@1df7648e] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,name,avatar,introduction,status,reject_reason,deleted,create_time,update_time FROM singer WHERE id=? AND deleted=0
+==> Parameters: 1(Long)
+<==      Total: 0
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@18b3b602]
+2026-09-07T22:24:11.090+08:00  WARN 3764 --- [yuexiang-singer] [nio-8083-exec-2] c.q.y.c.e.GlobalExceptionHandler         : 业务异常: 歌手不存在
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5862338c] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@2134550439 wrapping com.mysql.cj.jdbc.ConnectionImpl@1df7648e] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,name,avatar,introduction,status,reject_reason,deleted,create_time,update_time FROM singer WHERE deleted=0 AND (status = ? AND name LIKE ?) ORDER BY id DESC LIMIT 6
+==> Parameters: 1(Integer), %a%(String)
+<==    Columns: id, user_id, name, avatar, introduction, status, reject_reason, deleted, create_time, update_time
+<==        Row: 30, null, Kira, null, 偶像流行歌手，舞台感染力强。, 1, null, 0, 2026-08-27 14:45:58, 2026-08-27 14:45:58
+<==        Row: 29, null, Zen Garden, null, 环境音乐制作人，冥想音乐厂牌。, 1, null, 0, 2026-08-27 14:45:58, 2026-08-27 14:45:58
+<==        Row: 24, null, DJ Nova, null, 电子舞曲制作人，夜店榜单常客。, 1, null, 0, 2026-08-27 14:45:58, 2026-08-27 14:45:58
+<==        Row: 23, null, Noise Garden, null, 独立摇滚乐队，现场演出常客。, 1, null, 0, 2026-08-27 14:45:58, 2026-08-27 14:45:58
+<==      Total: 4
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5862338c]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2e1e68f5] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@551129926 wrapping com.mysql.cj.jdbc.ConnectionImpl@1df7648e] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,name,avatar,introduction,status,reject_reason,deleted,create_time,update_time FROM singer WHERE id=? AND deleted=0
+==> Parameters: 19(Long)
+<==    Columns: id, user_id, name, avatar, introduction, status, reject_reason, deleted, create_time, update_time
+<==        Row: 19, 1, 歌神, null, null, 1, null, 0, 2026-08-27 14:34:18, 2026-08-27 14:34:18
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2e1e68f5]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5d2c4144] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@836981030 wrapping com.mysql.cj.jdbc.ConnectionImpl@1df7648e] will not be managed by Spring
+==>  Preparing: SELECT COUNT( * ) AS total FROM singer_follow WHERE (singer_id = ?)
+==> Parameters: 19(Long)
+<==    Columns: total
+<==        Row: 0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5d2c4144]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5211c43c] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@387137562 wrapping com.mysql.cj.jdbc.ConnectionImpl@1df7648e] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,name,avatar,introduction,status,reject_reason,deleted,create_time,update_time FROM singer WHERE id=? AND deleted=0
+==> Parameters: 19(Long)
+<==    Columns: id, user_id, name, avatar, introduction, status, reject_reason, deleted, create_time, update_time
+<==        Row: 19, 1, 歌神, null, null, 1, null, 0, 2026-08-27 14:34:18, 2026-08-27 14:34:18
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5211c43c]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@737224c0] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@718482264 wrapping com.mysql.cj.jdbc.ConnectionImpl@1df7648e] will not be managed by Spring
+==>  Preparing: SELECT COUNT( * ) AS total FROM singer_follow WHERE (singer_id = ?)
+==> Parameters: 19(Long)
+<==    Columns: total
+<==        Row: 0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@737224c0]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@221b46a4] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1576805960 wrapping com.mysql.cj.jdbc.ConnectionImpl@1df7648e] will not be managed by Spring
+==>  Preparing: SELECT COUNT( * ) AS total FROM singer_follow WHERE (user_id = ? AND singer_id = ?)
+==> Parameters: 2(Long), 19(Long)
+<==    Columns: total
+<==        Row: 0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@221b46a4]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2a44ed4c] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1866884704 wrapping com.mysql.cj.jdbc.ConnectionImpl@1df7648e] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,name,avatar,introduction,status,reject_reason,deleted,create_time,update_time FROM singer WHERE id=? AND deleted=0
+==> Parameters: 19(Long)
+<==    Columns: id, user_id, name, avatar, introduction, status, reject_reason, deleted, create_time, update_time
+<==        Row: 19, 1, 歌神, null, null, 1, null, 0, 2026-08-27 14:34:18, 2026-08-27 14:34:18
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2a44ed4c]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7fa5fa1c] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@383337211 wrapping com.mysql.cj.jdbc.ConnectionImpl@1df7648e] will not be managed by Spring
+==>  Preparing: SELECT COUNT( * ) AS total FROM singer_follow WHERE (user_id = ? AND singer_id = ?)
+==> Parameters: 2(Long), 19(Long)
+<==    Columns: total
+<==        Row: 0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7fa5fa1c]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3d3c67a] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@2009349213 wrapping com.mysql.cj.jdbc.ConnectionImpl@1df7648e] will not be managed by Spring
+==>  Preparing: INSERT INTO singer_follow ( user_id, singer_id ) VALUES ( ?, ? )
+==> Parameters: 2(Long), 19(Long)
+<==    Updates: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3d3c67a]
+2026-09-07T22:25:08.132+08:00  INFO 3764 --- [yuexiang-singer] [nio-8083-exec-8] c.q.y.s.service.impl.SingerServiceImpl   : 用户关注歌手: userId=2, singerId=19
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@28360756] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@653392928 wrapping com.mysql.cj.jdbc.ConnectionImpl@1df7648e] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,name,avatar,introduction,status,reject_reason,deleted,create_time,update_time FROM singer WHERE id=? AND deleted=0
+==> Parameters: 19(Long)
+<==    Columns: id, user_id, name, avatar, introduction, status, reject_reason, deleted, create_time, update_time
+<==        Row: 19, 1, 歌神, null, null, 1, null, 0, 2026-08-27 14:34:18, 2026-08-27 14:34:18
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@28360756]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@67ccf61b] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@119491458 wrapping com.mysql.cj.jdbc.ConnectionImpl@1df7648e] will not be managed by Spring
+==>  Preparing: SELECT COUNT( * ) AS total FROM singer_follow WHERE (user_id = ? AND singer_id = ?)
+==> Parameters: 2(Long), 19(Long)
+<==    Columns: total
+<==        Row: 1
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@67ccf61b]
+2026-09-07T22:25:08.190+08:00  WARN 3764 --- [yuexiang-singer] [nio-8083-exec-7] c.q.y.c.e.GlobalExceptionHandler         : 业务异常: 请勿重复操作
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@774419bf] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@602806074 wrapping com.mysql.cj.jdbc.ConnectionImpl@1df7648e] will not be managed by Spring
+==>  Preparing: SELECT singer_id FROM singer_follow WHERE (user_id = ?)
+==> Parameters: 2(Long)
+<==    Columns: singer_id
+<==        Row: 19
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@774419bf]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@460bf120] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@50947973 wrapping com.mysql.cj.jdbc.ConnectionImpl@1df7648e] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,singer_id,create_time FROM singer_follow WHERE (user_id = ?) ORDER BY id DESC
+==> Parameters: 2(Long)
+<==    Columns: id, user_id, singer_id, create_time
+<==        Row: 1, 2, 19, 2026-09-07 22:25:08
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@460bf120]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@722a353c] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1154215577 wrapping com.mysql.cj.jdbc.ConnectionImpl@1df7648e] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,name,avatar,introduction,status,reject_reason,deleted,create_time,update_time FROM singer WHERE id IN ( ? ) AND deleted=0
+==> Parameters: 19(Long)
+<==    Columns: id, user_id, name, avatar, introduction, status, reject_reason, deleted, create_time, update_time
+<==        Row: 19, 1, 歌神, null, null, 1, null, 0, 2026-08-27 14:34:18, 2026-08-27 14:34:18
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@722a353c]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@24cb6571] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@705470360 wrapping com.mysql.cj.jdbc.ConnectionImpl@1df7648e] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,name,avatar,introduction,status,reject_reason,deleted,create_time,update_time FROM singer WHERE id=? AND deleted=0
+==> Parameters: 19(Long)
+<==    Columns: id, user_id, name, avatar, introduction, status, reject_reason, deleted, create_time, update_time
+<==        Row: 19, 1, 歌神, null, null, 1, null, 0, 2026-08-27 14:34:18, 2026-08-27 14:34:18
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@24cb6571]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@14e37f6b] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@102080602 wrapping com.mysql.cj.jdbc.ConnectionImpl@1df7648e] will not be managed by Spring
+==>  Preparing: SELECT COUNT( * ) AS total FROM singer_follow WHERE (singer_id = ?)
+==> Parameters: 19(Long)
+<==    Columns: total
+<==        Row: 1
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@14e37f6b]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@e5c8e10] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@21737623 wrapping com.mysql.cj.jdbc.ConnectionImpl@1df7648e] will not be managed by Spring
+==>  Preparing: SELECT COUNT( * ) AS total FROM singer_follow WHERE (user_id = ? AND singer_id = ?)
+==> Parameters: 2(Long), 19(Long)
+<==    Columns: total
+<==        Row: 1
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@e5c8e10]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7f305a85] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@901940769 wrapping com.mysql.cj.jdbc.ConnectionImpl@1df7648e] will not be managed by Spring
+==>  Preparing: DELETE FROM singer_follow WHERE (user_id = ? AND singer_id = ?)
+==> Parameters: 2(Long), 19(Long)
+<==    Updates: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7f305a85]
+2026-09-07T22:25:08.279+08:00  INFO 3764 --- [yuexiang-singer] [nio-8083-exec-1] c.q.y.s.service.impl.SingerServiceImpl   : 用户取消关注: userId=2, singerId=19
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@38bf851a] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@138758905 wrapping com.mysql.cj.jdbc.ConnectionImpl@1df7648e] will not be managed by Spring
+==>  Preparing: SELECT singer_id FROM singer_follow WHERE (user_id = ?)
+==> Parameters: 2(Long)
+<==      Total: 0
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@38bf851a]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3313f8db] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@409325612 wrapping com.mysql.cj.jdbc.ConnectionImpl@1df7648e] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,name,avatar,introduction,status,reject_reason,deleted,create_time,update_time FROM singer WHERE id=? AND deleted=0
+==> Parameters: 21(Long)
+<==    Columns: id, user_id, name, avatar, introduction, status, reject_reason, deleted, create_time, update_time
+<==        Row: 21, null, 木鱼组合, null, 国风新民谣组合，古筝与吉他的碰撞。, 1, null, 0, 2026-08-27 14:45:58, 2026-08-27 14:45:58
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3313f8db]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1002ab23] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1758781921 wrapping com.mysql.cj.jdbc.ConnectionImpl@1df7648e] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,name,avatar,introduction,status,reject_reason,deleted,create_time,update_time FROM singer WHERE id IN ( ? ) AND deleted=0
+==> Parameters: 21(Long)
+<==    Columns: id, user_id, name, avatar, introduction, status, reject_reason, deleted, create_time, update_time
+<==        Row: 21, null, 木鱼组合, null, 国风新民谣组合，古筝与吉他的碰撞。, 1, null, 0, 2026-08-27 14:45:58, 2026-08-27 14:45:58
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1002ab23]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5102624d] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@2038880682 wrapping com.mysql.cj.jdbc.ConnectionImpl@1df7648e] will not be managed by Spring
+==>  Preparing: SELECT COUNT( * ) AS total FROM singer_follow WHERE (singer_id = ?)
+==> Parameters: 21(Long)
+<==    Columns: total
+<==        Row: 0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5102624d]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@52b56a1] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1591198234 wrapping com.mysql.cj.jdbc.ConnectionImpl@1df7648e] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,name,avatar,introduction,status,reject_reason,deleted,create_time,update_time FROM singer WHERE id IN ( ? ) AND deleted=0
+==> Parameters: 21(Long)
+<==    Columns: id, user_id, name, avatar, introduction, status, reject_reason, deleted, create_time, update_time
+<==        Row: 21, null, 木鱼组合, null, 国风新民谣组合，古筝与吉他的碰撞。, 1, null, 0, 2026-08-27 14:45:58, 2026-08-27 14:45:58
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@52b56a1]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4f073ae] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@98918428 wrapping com.mysql.cj.jdbc.ConnectionImpl@1df7648e] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,name,avatar,introduction,status,reject_reason,deleted,create_time,update_time FROM singer WHERE id=? AND deleted=0
+==> Parameters: 21(Long)
+<==    Columns: id, user_id, name, avatar, introduction, status, reject_reason, deleted, create_time, update_time
+<==        Row: 21, null, 木鱼组合, null, 国风新民谣组合，古筝与吉他的碰撞。, 1, null, 0, 2026-08-27 14:45:58, 2026-08-27 14:45:58
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4f073ae]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4c96f8e2] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1179433561 wrapping com.mysql.cj.jdbc.ConnectionImpl@1df7648e] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,name,avatar,introduction,status,reject_reason,deleted,create_time,update_time FROM singer WHERE id IN ( ? ) AND deleted=0
+==> Parameters: 21(Long)
+<==    Columns: id, user_id, name, avatar, introduction, status, reject_reason, deleted, create_time, update_time
+<==        Row: 21, null, 木鱼组合, null, 国风新民谣组合，古筝与吉他的碰撞。, 1, null, 0, 2026-08-27 14:45:58, 2026-08-27 14:45:58
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4c96f8e2]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@458122b5] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1057239918 wrapping com.mysql.cj.jdbc.ConnectionImpl@1df7648e] will not be managed by Spring
+==>  Preparing: SELECT COUNT( * ) AS total FROM singer_follow WHERE (singer_id = ?)
+==> Parameters: 21(Long)
+<==    Columns: total
+<==        Row: 0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@458122b5]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@440a8f15] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@63367854 wrapping com.mysql.cj.jdbc.ConnectionImpl@1df7648e] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,name,avatar,introduction,status,reject_reason,deleted,create_time,update_time FROM singer WHERE deleted=0 AND (status = ? AND name LIKE ?) ORDER BY id DESC LIMIT 6
+==> Parameters: 1(Integer), %Kira%(String)
+<==    Columns: id, user_id, name, avatar, introduction, status, reject_reason, deleted, create_time, update_time
+<==        Row: 30, null, Kira, null, 偶像流行歌手，舞台感染力强。, 1, null, 0, 2026-08-27 14:45:58, 2026-08-27 14:45:58
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@440a8f15]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3b671d8] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1768969136 wrapping com.mysql.cj.jdbc.ConnectionImpl@1df7648e] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,name,avatar,introduction,status,reject_reason,deleted,create_time,update_time FROM singer WHERE id IN ( ? ) AND deleted=0
+==> Parameters: 21(Long)
+<==    Columns: id, user_id, name, avatar, introduction, status, reject_reason, deleted, create_time, update_time
+<==        Row: 21, null, 木鱼组合, null, 国风新民谣组合，古筝与吉他的碰撞。, 1, null, 0, 2026-08-27 14:45:58, 2026-08-27 14:45:58
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3b671d8]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6d7f6b1b] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@962124352 wrapping com.mysql.cj.jdbc.ConnectionImpl@1df7648e] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,name,avatar,introduction,status,reject_reason,deleted,create_time,update_time FROM singer WHERE id=? AND deleted=0
+==> Parameters: 21(Long)
+<==    Columns: id, user_id, name, avatar, introduction, status, reject_reason, deleted, create_time, update_time
+<==        Row: 21, null, 木鱼组合, null, 国风新民谣组合，古筝与吉他的碰撞。, 1, null, 0, 2026-08-27 14:45:58, 2026-08-27 14:45:58
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6d7f6b1b]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7cfd09de] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@2040790737 wrapping com.mysql.cj.jdbc.ConnectionImpl@1df7648e] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,name,avatar,introduction,status,reject_reason,deleted,create_time,update_time FROM singer WHERE id IN ( ? ) AND deleted=0
+==> Parameters: 21(Long)
+<==    Columns: id, user_id, name, avatar, introduction, status, reject_reason, deleted, create_time, update_time
+<==        Row: 21, null, 木鱼组合, null, 国风新民谣组合，古筝与吉他的碰撞。, 1, null, 0, 2026-08-27 14:45:58, 2026-08-27 14:45:58
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7cfd09de]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@76513914] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1727716308 wrapping com.mysql.cj.jdbc.ConnectionImpl@1df7648e] will not be managed by Spring
+==>  Preparing: SELECT COUNT( * ) AS total FROM singer_follow WHERE (singer_id = ?)
+==> Parameters: 21(Long)
+<==    Columns: total
+<==        Row: 0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@76513914]
+Creating a new SqlSession
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4c3d1bab] was not registered for synchronization because synchronization is not active
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4d97dbb] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@70776481 wrapping com.mysql.cj.jdbc.ConnectionImpl@3010ef13] will not be managed by Spring
+JDBC Connection [HikariProxyConnection@15014931 wrapping com.mysql.cj.jdbc.ConnectionImpl@1ee4d022] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,name,avatar,introduction,status,reject_reason,deleted,create_time,update_time FROM singer WHERE id IN ( ? , ? , ? , ? , ? , ? , ? ) AND deleted=0
+==>  Preparing: SELECT id,user_id,name,avatar,introduction,status,reject_reason,deleted,create_time,update_time FROM singer WHERE id IN ( ? , ? ) AND deleted=0
+==> Parameters: 31(Long), 23(Long)
+==> Parameters: 30(Long), 22(Long), 27(Long), 24(Long), 23(Long), 21(Long), 25(Long)
+<==    Columns: id, user_id, name, avatar, introduction, status, reject_reason, deleted, create_time, update_time
+<==    Columns: id, user_id, name, avatar, introduction, status, reject_reason, deleted, create_time, update_time
+<==        Row: 23, null, Noise Garden, null, 独立摇滚乐队，现场演出常客。, 1, null, 0, 2026-08-27 14:45:58, 2026-08-27 14:45:58
+<==        Row: 21, null, 木鱼组合, null, 国风新民谣组合，古筝与吉他的碰撞。, 1, null, 0, 2026-08-27 14:45:58, 2026-08-27 14:45:58
+<==        Row: 31, 72, user, null, null, 1, null, 0, 2026-08-31 14:42:54, 2026-08-31 14:42:54
+<==        Row: 22, null, 程一诺, null, 治愈系女声，嗓音干净温暖。, 1, null, 0, 2026-08-27 14:45:58, 2026-08-27 14:45:58
+<==      Total: 2
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4c3d1bab]
+<==        Row: 23, null, Noise Garden, null, 独立摇滚乐队，现场演出常客。, 1, null, 0, 2026-08-27 14:45:58, 2026-08-27 14:45:58
+<==        Row: 24, null, DJ Nova, null, 电子舞曲制作人，夜店榜单常客。, 1, null, 0, 2026-08-27 14:45:58, 2026-08-27 14:45:58
+<==        Row: 25, null, 阿依古丽, null, 新疆民族唱腔，辽阔高亢。, 1, null, 0, 2026-08-27 14:45:58, 2026-08-27 14:45:58
+<==        Row: 27, null, 陆知行, null, 说唱新人，方言说唱代表。, 1, null, 0, 2026-08-27 14:45:58, 2026-08-27 14:45:58
+<==        Row: 30, null, Kira, null, 偶像流行歌手，舞台感染力强。, 1, null, 0, 2026-08-27 14:45:58, 2026-08-27 14:45:58
+<==      Total: 7
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4d97dbb]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3d8c8a3c] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1142977674 wrapping com.mysql.cj.jdbc.ConnectionImpl@1ee4d022] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,name,avatar,introduction,status,reject_reason,deleted,create_time,update_time FROM singer WHERE deleted=0 AND (id IN (?,?,?,?,?,?,?,?,?,?) AND status = ?)
+==> Parameters: 21(Long), 22(Long), 30(Long), 23(Long), 24(Long), 29(Long), 26(Long), 27(Long), 25(Long), 28(Long), 1(Integer)
+<==    Columns: id, user_id, name, avatar, introduction, status, reject_reason, deleted, create_time, update_time
+<==        Row: 21, null, 木鱼组合, null, 国风新民谣组合，古筝与吉他的碰撞。, 1, null, 0, 2026-08-27 14:45:58, 2026-08-27 14:45:58
+<==        Row: 22, null, 程一诺, null, 治愈系女声，嗓音干净温暖。, 1, null, 0, 2026-08-27 14:45:58, 2026-08-27 14:45:58
+<==        Row: 23, null, Noise Garden, null, 独立摇滚乐队，现场演出常客。, 1, null, 0, 2026-08-27 14:45:58, 2026-08-27 14:45:58
+<==        Row: 24, null, DJ Nova, null, 电子舞曲制作人，夜店榜单常客。, 1, null, 0, 2026-08-27 14:45:58, 2026-08-27 14:45:58
+<==        Row: 25, null, 阿依古丽, null, 新疆民族唱腔，辽阔高亢。, 1, null, 0, 2026-08-27 14:45:58, 2026-08-27 14:45:58
+<==        Row: 26, null, Blue Hour, null, 爵士四重奏，午夜俱乐部驻场。, 1, null, 0, 2026-08-27 14:45:58, 2026-08-27 14:45:58
+<==        Row: 27, null, 陆知行, null, 说唱新人，方言说唱代表。, 1, null, 0, 2026-08-27 14:45:58, 2026-08-27 14:45:58
+<==        Row: 28, null, 小满, null, 校园民谣女歌手，清新治愈。, 1, null, 0, 2026-08-27 14:45:58, 2026-08-27 14:45:58
+<==        Row: 29, null, Zen Garden, null, 环境音乐制作人，冥想音乐厂牌。, 1, null, 0, 2026-08-27 14:45:58, 2026-08-27 14:45:58
+<==        Row: 30, null, Kira, null, 偶像流行歌手，舞台感染力强。, 1, null, 0, 2026-08-27 14:45:58, 2026-08-27 14:45:58
+<==      Total: 10
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3d8c8a3c]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@21bc235e] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1404090259 wrapping com.mysql.cj.jdbc.ConnectionImpl@1ee4d022] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,name,avatar,introduction,status,reject_reason,deleted,create_time,update_time FROM singer WHERE id IN ( ? ) AND deleted=0
+==> Parameters: 31(Long)
+<==    Columns: id, user_id, name, avatar, introduction, status, reject_reason, deleted, create_time, update_time
+<==        Row: 31, 72, user, null, null, 1, null, 0, 2026-08-31 14:42:54, 2026-08-31 14:42:54
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@21bc235e]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@569e0e61] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1865678476 wrapping com.mysql.cj.jdbc.ConnectionImpl@1ee4d022] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,name,avatar,introduction,status,reject_reason,deleted,create_time,update_time FROM singer WHERE id IN ( ? , ? , ? ) AND deleted=0
+==> Parameters: 31(Long), 22(Long), 30(Long)
+<==    Columns: id, user_id, name, avatar, introduction, status, reject_reason, deleted, create_time, update_time
+<==        Row: 22, null, 程一诺, null, 治愈系女声，嗓音干净温暖。, 1, null, 0, 2026-08-27 14:45:58, 2026-08-27 14:45:58
+<==        Row: 30, null, Kira, null, 偶像流行歌手，舞台感染力强。, 1, null, 0, 2026-08-27 14:45:58, 2026-08-27 14:45:58
+<==        Row: 31, 72, user, null, null, 1, null, 0, 2026-08-31 14:42:54, 2026-08-31 14:42:54
+<==      Total: 3
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@569e0e61]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7cc89df6] was not registered for synchronization because synchronization is not active
+Creating a new SqlSession
+JDBC Connection [HikariProxyConnection@1288389225 wrapping com.mysql.cj.jdbc.ConnectionImpl@1ee4d022] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,name,avatar,introduction,status,reject_reason,deleted,create_time,update_time FROM singer WHERE id IN ( ? , ? ) AND deleted=0
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@58cb78e2] was not registered for synchronization because synchronization is not active
+==> Parameters: 31(Long), 23(Long)
+JDBC Connection [HikariProxyConnection@126526212 wrapping com.mysql.cj.jdbc.ConnectionImpl@3010ef13] will not be managed by Spring
+<==    Columns: id, user_id, name, avatar, introduction, status, reject_reason, deleted, create_time, update_time
+==>  Preparing: SELECT id,user_id,name,avatar,introduction,status,reject_reason,deleted,create_time,update_time FROM singer WHERE id IN ( ? , ? , ? , ? , ? , ? , ? ) AND deleted=0
+<==        Row: 23, null, Noise Garden, null, 独立摇滚乐队，现场演出常客。, 1, null, 0, 2026-08-27 14:45:58, 2026-08-27 14:45:58
+==> Parameters: 30(Long), 22(Long), 27(Long), 24(Long), 23(Long), 21(Long), 25(Long)
+<==        Row: 31, 72, user, null, null, 1, null, 0, 2026-08-31 14:42:54, 2026-08-31 14:42:54
+<==      Total: 2
+<==    Columns: id, user_id, name, avatar, introduction, status, reject_reason, deleted, create_time, update_time
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7cc89df6]
+<==        Row: 21, null, 木鱼组合, null, 国风新民谣组合，古筝与吉他的碰撞。, 1, null, 0, 2026-08-27 14:45:58, 2026-08-27 14:45:58
+<==        Row: 22, null, 程一诺, null, 治愈系女声，嗓音干净温暖。, 1, null, 0, 2026-08-27 14:45:58, 2026-08-27 14:45:58
+<==        Row: 23, null, Noise Garden, null, 独立摇滚乐队，现场演出常客。, 1, null, 0, 2026-08-27 14:45:58, 2026-08-27 14:45:58
+<==        Row: 24, null, DJ Nova, null, 电子舞曲制作人，夜店榜单常客。, 1, null, 0, 2026-08-27 14:45:58, 2026-08-27 14:45:58
+<==        Row: 25, null, 阿依古丽, null, 新疆民族唱腔，辽阔高亢。, 1, null, 0, 2026-08-27 14:45:58, 2026-08-27 14:45:58
+Creating a new SqlSession
+<==        Row: 27, null, 陆知行, null, 说唱新人，方言说唱代表。, 1, null, 0, 2026-08-27 14:45:58, 2026-08-27 14:45:58
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@17ae18b5] was not registered for synchronization because synchronization is not active
+<==        Row: 30, null, Kira, null, 偶像流行歌手，舞台感染力强。, 1, null, 0, 2026-08-27 14:45:58, 2026-08-27 14:45:58
+<==      Total: 7
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@58cb78e2]
+JDBC Connection [HikariProxyConnection@378702781 wrapping com.mysql.cj.jdbc.ConnectionImpl@1ee4d022] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,name,avatar,introduction,status,reject_reason,deleted,create_time,update_time FROM singer WHERE deleted=0 AND (id IN (?,?,?,?,?,?,?,?,?,?) AND status = ?)
+==> Parameters: 21(Long), 22(Long), 30(Long), 23(Long), 24(Long), 29(Long), 26(Long), 27(Long), 25(Long), 28(Long), 1(Integer)
+<==    Columns: id, user_id, name, avatar, introduction, status, reject_reason, deleted, create_time, update_time
+<==        Row: 21, null, 木鱼组合, null, 国风新民谣组合，古筝与吉他的碰撞。, 1, null, 0, 2026-08-27 14:45:58, 2026-08-27 14:45:58
+<==        Row: 22, null, 程一诺, null, 治愈系女声，嗓音干净温暖。, 1, null, 0, 2026-08-27 14:45:58, 2026-08-27 14:45:58
+<==        Row: 23, null, Noise Garden, null, 独立摇滚乐队，现场演出常客。, 1, null, 0, 2026-08-27 14:45:58, 2026-08-27 14:45:58
+<==        Row: 24, null, DJ Nova, null, 电子舞曲制作人，夜店榜单常客。, 1, null, 0, 2026-08-27 14:45:58, 2026-08-27 14:45:58
+Creating a new SqlSession
+<==        Row: 25, null, 阿依古丽, null, 新疆民族唱腔，辽阔高亢。, 1, null, 0, 2026-08-27 14:45:58, 2026-08-27 14:45:58
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2d939279] was not registered for synchronization because synchronization is not active
+<==        Row: 26, null, Blue Hour, null, 爵士四重奏，午夜俱乐部驻场。, 1, null, 0, 2026-08-27 14:45:58, 2026-08-27 14:45:58
+JDBC Connection [HikariProxyConnection@87955036 wrapping com.mysql.cj.jdbc.ConnectionImpl@3010ef13] will not be managed by Spring
+<==        Row: 27, null, 陆知行, null, 说唱新人，方言说唱代表。, 1, null, 0, 2026-08-27 14:45:58, 2026-08-27 14:45:58
+==>  Preparing: SELECT id,user_id,name,avatar,introduction,status,reject_reason,deleted,create_time,update_time FROM singer WHERE id IN ( ? ) AND deleted=0
+<==        Row: 28, null, 小满, null, 校园民谣女歌手，清新治愈。, 1, null, 0, 2026-08-27 14:45:58, 2026-08-27 14:45:58
+==> Parameters: 31(Long)
+<==        Row: 29, null, Zen Garden, null, 环境音乐制作人，冥想音乐厂牌。, 1, null, 0, 2026-08-27 14:45:58, 2026-08-27 14:45:58
+<==        Row: 30, null, Kira, null, 偶像流行歌手，舞台感染力强。, 1, null, 0, 2026-08-27 14:45:58, 2026-08-27 14:45:58
+<==    Columns: id, user_id, name, avatar, introduction, status, reject_reason, deleted, create_time, update_time
+<==      Total: 10
+<==        Row: 31, 72, user, null, null, 1, null, 0, 2026-08-31 14:42:54, 2026-08-31 14:42:54
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@17ae18b5]
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2d939279]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@45e0c8e7] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@714718156 wrapping com.mysql.cj.jdbc.ConnectionImpl@3010ef13] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,name,avatar,introduction,status,reject_reason,deleted,create_time,update_time FROM singer WHERE id IN ( ? , ? , ? ) AND deleted=0
+==> Parameters: 22(Long), 31(Long), 30(Long)
+<==    Columns: id, user_id, name, avatar, introduction, status, reject_reason, deleted, create_time, update_time
+<==        Row: 22, null, 程一诺, null, 治愈系女声，嗓音干净温暖。, 1, null, 0, 2026-08-27 14:45:58, 2026-08-27 14:45:58
+<==        Row: 30, null, Kira, null, 偶像流行歌手，舞台感染力强。, 1, null, 0, 2026-08-27 14:45:58, 2026-08-27 14:45:58
+<==        Row: 31, 72, user, null, null, 1, null, 0, 2026-08-31 14:42:54, 2026-08-31 14:42:54
+<==      Total: 3
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@45e0c8e7]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4fd7cc3c] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@197850859 wrapping com.mysql.cj.jdbc.ConnectionImpl@1ee4d022] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,name,avatar,introduction,status,reject_reason,deleted,create_time,update_time FROM singer WHERE id=? AND deleted=0
+==> Parameters: 31(Long)
+<==    Columns: id, user_id, name, avatar, introduction, status, reject_reason, deleted, create_time, update_time
+<==        Row: 31, 72, user, null, null, 1, null, 0, 2026-08-31 14:42:54, 2026-08-31 14:42:54
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4fd7cc3c]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@27a630bc] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1231564455 wrapping com.mysql.cj.jdbc.ConnectionImpl@1ee4d022] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,name,avatar,introduction,status,reject_reason,deleted,create_time,update_time FROM singer WHERE id IN ( ? ) AND deleted=0
+==> Parameters: 31(Long)
+<==    Columns: id, user_id, name, avatar, introduction, status, reject_reason, deleted, create_time, update_time
+<==        Row: 31, 72, user, null, null, 1, null, 0, 2026-08-31 14:42:54, 2026-08-31 14:42:54
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@27a630bc]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@df400c1] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@734001688 wrapping com.mysql.cj.jdbc.ConnectionImpl@1ee4d022] will not be managed by Spring
+==>  Preparing: SELECT singer_id FROM singer_follow WHERE (user_id = ?)
+==> Parameters: 74(Long)
+<==      Total: 0
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@df400c1]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4261ad28] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@112355115 wrapping com.mysql.cj.jdbc.ConnectionImpl@1ee4d022] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,name,avatar,introduction,status,reject_reason,deleted,create_time,update_time FROM singer WHERE id=? AND deleted=0
+==> Parameters: 31(Long)
+<==    Columns: id, user_id, name, avatar, introduction, status, reject_reason, deleted, create_time, update_time
+<==        Row: 31, 72, user, null, null, 1, null, 0, 2026-08-31 14:42:54, 2026-08-31 14:42:54
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4261ad28]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@22455216] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@719668488 wrapping com.mysql.cj.jdbc.ConnectionImpl@1ee4d022] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,name,avatar,introduction,status,reject_reason,deleted,create_time,update_time FROM singer WHERE id IN ( ? ) AND deleted=0
+==> Parameters: 31(Long)
+<==    Columns: id, user_id, name, avatar, introduction, status, reject_reason, deleted, create_time, update_time
+<==        Row: 31, 72, user, null, null, 1, null, 0, 2026-08-31 14:42:54, 2026-08-31 14:42:54
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@22455216]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@137fef0e] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@544347168 wrapping com.mysql.cj.jdbc.ConnectionImpl@1ee4d022] will not be managed by Spring
+==>  Preparing: SELECT COUNT( * ) AS total FROM singer_follow WHERE (singer_id = ?)
+==> Parameters: 31(Long)
+<==    Columns: total
+<==        Row: 0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@137fef0e]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@50a25fb9] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1011469628 wrapping com.mysql.cj.jdbc.ConnectionImpl@1ee4d022] will not be managed by Spring
+==>  Preparing: SELECT COUNT( * ) AS total FROM singer_follow WHERE (user_id = ? AND singer_id = ?)
+==> Parameters: 74(Long), 31(Long)
+<==    Columns: total
+<==        Row: 0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@50a25fb9]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7a582546] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1111961814 wrapping com.mysql.cj.jdbc.ConnectionImpl@1ee4d022] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,name,avatar,introduction,status,reject_reason,deleted,create_time,update_time FROM singer WHERE id IN ( ? ) AND deleted=0
+==> Parameters: 31(Long)
+<==    Columns: id, user_id, name, avatar, introduction, status, reject_reason, deleted, create_time, update_time
+<==        Row: 31, 72, user, null, null, 1, null, 0, 2026-08-31 14:42:54, 2026-08-31 14:42:54
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7a582546]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1dd0ce0b] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@509589819 wrapping com.mysql.cj.jdbc.ConnectionImpl@3010ef13] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,name,avatar,introduction,status,reject_reason,deleted,create_time,update_time FROM singer WHERE id=? AND deleted=0
+==> Parameters: 31(Long)
+<==    Columns: id, user_id, name, avatar, introduction, status, reject_reason, deleted, create_time, update_time
+<==        Row: 31, 72, user, null, null, 1, null, 0, 2026-08-31 14:42:54, 2026-08-31 14:42:54
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1dd0ce0b]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@40092687] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1538394139 wrapping com.mysql.cj.jdbc.ConnectionImpl@3010ef13] will not be managed by Spring
+==>  Preparing: SELECT COUNT( * ) AS total FROM singer_follow WHERE (user_id = ? AND singer_id = ?)
+==> Parameters: 74(Long), 31(Long)
+<==    Columns: total
+<==        Row: 0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@40092687]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@9b2344b] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@394980 wrapping com.mysql.cj.jdbc.ConnectionImpl@3010ef13] will not be managed by Spring
+==>  Preparing: INSERT INTO singer_follow ( user_id, singer_id ) VALUES ( ?, ? )
+==> Parameters: 74(Long), 31(Long)
+<==    Updates: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@9b2344b]
+2026-09-07T23:09:52.536+08:00  INFO 3764 --- [yuexiang-singer] [nio-8083-exec-8] c.q.y.s.service.impl.SingerServiceImpl   : 用户关注歌手: userId=74, singerId=31
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4949b859] was not registered for synchronization because synchronization is not active
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7018b450] was not registered for synchronization because synchronization is not active
+Creating a new SqlSession
+JDBC Connection [HikariProxyConnection@1771221250 wrapping com.mysql.cj.jdbc.ConnectionImpl@3010ef13] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,name,avatar,introduction,status,reject_reason,deleted,create_time,update_time FROM singer WHERE deleted=0 AND (id IN (?,?,?,?,?,?,?,?,?,?) AND status = ?)
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5afb2b3d] was not registered for synchronization because synchronization is not active
+==> Parameters: 21(Long), 22(Long), 30(Long), 23(Long), 24(Long), 29(Long), 26(Long), 27(Long), 25(Long), 28(Long), 1(Integer)
+JDBC Connection [HikariProxyConnection@439095164 wrapping com.mysql.cj.jdbc.ConnectionImpl@1ee4d022] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,name,avatar,introduction,status,reject_reason,deleted,create_time,update_time FROM singer WHERE id IN ( ? , ? , ? , ? , ? , ? , ? ) AND deleted=0
+JDBC Connection [HikariProxyConnection@421492597 wrapping com.mysql.cj.jdbc.ConnectionImpl@7e3fe841] will not be managed by Spring
+==> Parameters: 30(Long), 22(Long), 27(Long), 24(Long), 23(Long), 21(Long), 25(Long)
+==>  Preparing: SELECT id,user_id,name,avatar,introduction,status,reject_reason,deleted,create_time,update_time FROM singer WHERE id IN ( ? , ? ) AND deleted=0
+<==    Columns: id, user_id, name, avatar, introduction, status, reject_reason, deleted, create_time, update_time
+==> Parameters: 31(Long), 23(Long)
+<==        Row: 21, null, 木鱼组合, null, 国风新民谣组合，古筝与吉他的碰撞。, 1, null, 0, 2026-08-27 14:45:58, 2026-08-27 14:45:58
+<==    Columns: id, user_id, name, avatar, introduction, status, reject_reason, deleted, create_time, update_time
+<==        Row: 22, null, 程一诺, null, 治愈系女声，嗓音干净温暖。, 1, null, 0, 2026-08-27 14:45:58, 2026-08-27 14:45:58
+<==        Row: 21, null, 木鱼组合, null, 国风新民谣组合，古筝与吉他的碰撞。, 1, null, 0, 2026-08-27 14:45:58, 2026-08-27 14:45:58
+<==        Row: 23, null, Noise Garden, null, 独立摇滚乐队，现场演出常客。, 1, null, 0, 2026-08-27 14:45:58, 2026-08-27 14:45:58
+<==        Row: 22, null, 程一诺, null, 治愈系女声，嗓音干净温暖。, 1, null, 0, 2026-08-27 14:45:58, 2026-08-27 14:45:58
+<==        Row: 24, null, DJ Nova, null, 电子舞曲制作人，夜店榜单常客。, 1, null, 0, 2026-08-27 14:45:58, 2026-08-27 14:45:58
+<==        Row: 23, null, Noise Garden, null, 独立摇滚乐队，现场演出常客。, 1, null, 0, 2026-08-27 14:45:58, 2026-08-27 14:45:58
+<==    Columns: id, user_id, name, avatar, introduction, status, reject_reason, deleted, create_time, update_time
+<==        Row: 24, null, DJ Nova, null, 电子舞曲制作人，夜店榜单常客。, 1, null, 0, 2026-08-27 14:45:58, 2026-08-27 14:45:58
+<==        Row: 25, null, 阿依古丽, null, 新疆民族唱腔，辽阔高亢。, 1, null, 0, 2026-08-27 14:45:58, 2026-08-27 14:45:58
+<==        Row: 25, null, 阿依古丽, null, 新疆民族唱腔，辽阔高亢。, 1, null, 0, 2026-08-27 14:45:58, 2026-08-27 14:45:58
+<==        Row: 26, null, Blue Hour, null, 爵士四重奏，午夜俱乐部驻场。, 1, null, 0, 2026-08-27 14:45:58, 2026-08-27 14:45:58
+<==        Row: 23, null, Noise Garden, null, 独立摇滚乐队，现场演出常客。, 1, null, 0, 2026-08-27 14:45:58, 2026-08-27 14:45:58
+<==        Row: 27, null, 陆知行, null, 说唱新人，方言说唱代表。, 1, null, 0, 2026-08-27 14:45:58, 2026-08-27 14:45:58
+<==        Row: 27, null, 陆知行, null, 说唱新人，方言说唱代表。, 1, null, 0, 2026-08-27 14:45:58, 2026-08-27 14:45:58
+<==        Row: 28, null, 小满, null, 校园民谣女歌手，清新治愈。, 1, null, 0, 2026-08-27 14:45:58, 2026-08-27 14:45:58
+<==        Row: 31, 72, user, null, null, 1, null, 0, 2026-08-31 14:42:54, 2026-08-31 14:42:54
+<==      Total: 2
+<==        Row: 29, null, Zen Garden, null, 环境音乐制作人，冥想音乐厂牌。, 1, null, 0, 2026-08-27 14:45:58, 2026-08-27 14:45:58
+<==        Row: 30, null, Kira, null, 偶像流行歌手，舞台感染力强。, 1, null, 0, 2026-08-27 14:45:58, 2026-08-27 14:45:58
+<==        Row: 30, null, Kira, null, 偶像流行歌手，舞台感染力强。, 1, null, 0, 2026-08-27 14:45:58, 2026-08-27 14:45:58
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5afb2b3d]
+<==      Total: 10
+<==      Total: 7
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7018b450]
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4949b859]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1281f519] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1673952601 wrapping com.mysql.cj.jdbc.ConnectionImpl@1ee4d022] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,name,avatar,introduction,status,reject_reason,deleted,create_time,update_time FROM singer WHERE id IN ( ? ) AND deleted=0
+==> Parameters: 31(Long)
+<==    Columns: id, user_id, name, avatar, introduction, status, reject_reason, deleted, create_time, update_time
+<==        Row: 31, 72, user, null, null, 1, null, 0, 2026-08-31 14:42:54, 2026-08-31 14:42:54
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1281f519]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3a020a20] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@750255628 wrapping com.mysql.cj.jdbc.ConnectionImpl@1ee4d022] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,name,avatar,introduction,status,reject_reason,deleted,create_time,update_time FROM singer WHERE id IN ( ? , ? , ? ) AND deleted=0
+==> Parameters: 31(Long), 22(Long), 30(Long)
+<==    Columns: id, user_id, name, avatar, introduction, status, reject_reason, deleted, create_time, update_time
+<==        Row: 22, null, 程一诺, null, 治愈系女声，嗓音干净温暖。, 1, null, 0, 2026-08-27 14:45:58, 2026-08-27 14:45:58
+<==        Row: 30, null, Kira, null, 偶像流行歌手，舞台感染力强。, 1, null, 0, 2026-08-27 14:45:58, 2026-08-27 14:45:58
+<==        Row: 31, 72, user, null, null, 1, null, 0, 2026-08-31 14:42:54, 2026-08-31 14:42:54
+<==      Total: 3
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3a020a20]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@507071df] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1798904962 wrapping com.mysql.cj.jdbc.ConnectionImpl@1ee4d022] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,name,avatar,introduction,status,reject_reason,deleted,create_time,update_time FROM singer WHERE id=? AND deleted=0
+==> Parameters: 31(Long)
+<==    Columns: id, user_id, name, avatar, introduction, status, reject_reason, deleted, create_time, update_time
+<==        Row: 31, 72, user, null, null, 1, null, 0, 2026-08-31 14:42:54, 2026-08-31 14:42:54
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@507071df]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5456e29f] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1683488727 wrapping com.mysql.cj.jdbc.ConnectionImpl@3010ef13] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,name,avatar,introduction,status,reject_reason,deleted,create_time,update_time FROM singer WHERE id IN ( ? ) AND deleted=0
+==> Parameters: 31(Long)
+<==    Columns: id, user_id, name, avatar, introduction, status, reject_reason, deleted, create_time, update_time
+<==        Row: 31, 72, user, null, null, 1, null, 0, 2026-08-31 14:42:54, 2026-08-31 14:42:54
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5456e29f]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1e3574a3] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@2087918799 wrapping com.mysql.cj.jdbc.ConnectionImpl@7e3fe841] will not be managed by Spring
+==>  Preparing: SELECT singer_id FROM singer_follow WHERE (user_id = ?)
+==> Parameters: 74(Long)
+<==    Columns: singer_id
+<==        Row: 31
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1e3574a3]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@52c49fec] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1456172701 wrapping com.mysql.cj.jdbc.ConnectionImpl@3010ef13] will not be managed by Spring
+==>  Preparing: SELECT singer_id FROM singer_follow WHERE (user_id = ?)
+==> Parameters: 74(Long)
+<==    Columns: singer_id
+<==        Row: 31
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@52c49fec]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@364b16e8] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@462744296 wrapping com.mysql.cj.jdbc.ConnectionImpl@1ee4d022] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,name,avatar,introduction,status,reject_reason,deleted,create_time,update_time FROM singer WHERE id IN ( ? , ? ) AND deleted=0
+==> Parameters: 31(Long), 23(Long)
+<==    Columns: id, user_id, name, avatar, introduction, status, reject_reason, deleted, create_time, update_time
+<==        Row: 23, null, Noise Garden, null, 独立摇滚乐队，现场演出常客。, 1, null, 0, 2026-08-27 14:45:58, 2026-08-27 14:45:58
+<==        Row: 31, 72, user, null, null, 1, null, 0, 2026-08-31 14:42:54, 2026-08-31 14:42:54
+<==      Total: 2
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@364b16e8]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5c6b3d22] was not registered for synchronization because synchronization is not active
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@21835f0b] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@511114881 wrapping com.mysql.cj.jdbc.ConnectionImpl@1ee4d022] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,name,avatar,introduction,status,reject_reason,deleted,create_time,update_time FROM singer WHERE id IN ( ? , ? , ? , ? , ? , ? , ? ) AND deleted=0
+==> Parameters: 30(Long), 22(Long), 27(Long), 24(Long), 23(Long), 21(Long), 25(Long)
+JDBC Connection [HikariProxyConnection@2029901757 wrapping com.mysql.cj.jdbc.ConnectionImpl@3010ef13] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,name,avatar,introduction,status,reject_reason,deleted,create_time,update_time FROM singer WHERE deleted=0 AND (id IN (?,?,?,?,?,?,?,?,?,?) AND status = ?)
+<==    Columns: id, user_id, name, avatar, introduction, status, reject_reason, deleted, create_time, update_time
+==> Parameters: 21(Long), 22(Long), 30(Long), 23(Long), 24(Long), 29(Long), 26(Long), 27(Long), 25(Long), 28(Long), 1(Integer)
+<==        Row: 21, null, 木鱼组合, null, 国风新民谣组合，古筝与吉他的碰撞。, 1, null, 0, 2026-08-27 14:45:58, 2026-08-27 14:45:58
+<==        Row: 22, null, 程一诺, null, 治愈系女声，嗓音干净温暖。, 1, null, 0, 2026-08-27 14:45:58, 2026-08-27 14:45:58
+<==    Columns: id, user_id, name, avatar, introduction, status, reject_reason, deleted, create_time, update_time
+<==        Row: 23, null, Noise Garden, null, 独立摇滚乐队，现场演出常客。, 1, null, 0, 2026-08-27 14:45:58, 2026-08-27 14:45:58
+<==        Row: 21, null, 木鱼组合, null, 国风新民谣组合，古筝与吉他的碰撞。, 1, null, 0, 2026-08-27 14:45:58, 2026-08-27 14:45:58
+<==        Row: 24, null, DJ Nova, null, 电子舞曲制作人，夜店榜单常客。, 1, null, 0, 2026-08-27 14:45:58, 2026-08-27 14:45:58
+<==        Row: 22, null, 程一诺, null, 治愈系女声，嗓音干净温暖。, 1, null, 0, 2026-08-27 14:45:58, 2026-08-27 14:45:58
+<==        Row: 25, null, 阿依古丽, null, 新疆民族唱腔，辽阔高亢。, 1, null, 0, 2026-08-27 14:45:58, 2026-08-27 14:45:58
+<==        Row: 23, null, Noise Garden, null, 独立摇滚乐队，现场演出常客。, 1, null, 0, 2026-08-27 14:45:58, 2026-08-27 14:45:58
+<==        Row: 27, null, 陆知行, null, 说唱新人，方言说唱代表。, 1, null, 0, 2026-08-27 14:45:58, 2026-08-27 14:45:58
+<==        Row: 24, null, DJ Nova, null, 电子舞曲制作人，夜店榜单常客。, 1, null, 0, 2026-08-27 14:45:58, 2026-08-27 14:45:58
+<==        Row: 30, null, Kira, null, 偶像流行歌手，舞台感染力强。, 1, null, 0, 2026-08-27 14:45:58, 2026-08-27 14:45:58
+<==        Row: 25, null, 阿依古丽, null, 新疆民族唱腔，辽阔高亢。, 1, null, 0, 2026-08-27 14:45:58, 2026-08-27 14:45:58
+<==      Total: 7
+<==        Row: 26, null, Blue Hour, null, 爵士四重奏，午夜俱乐部驻场。, 1, null, 0, 2026-08-27 14:45:58, 2026-08-27 14:45:58
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5c6b3d22]
+<==        Row: 27, null, 陆知行, null, 说唱新人，方言说唱代表。, 1, null, 0, 2026-08-27 14:45:58, 2026-08-27 14:45:58
+<==        Row: 28, null, 小满, null, 校园民谣女歌手，清新治愈。, 1, null, 0, 2026-08-27 14:45:58, 2026-08-27 14:45:58
+<==        Row: 29, null, Zen Garden, null, 环境音乐制作人，冥想音乐厂牌。, 1, null, 0, 2026-08-27 14:45:58, 2026-08-27 14:45:58
+<==        Row: 30, null, Kira, null, 偶像流行歌手，舞台感染力强。, 1, null, 0, 2026-08-27 14:45:58, 2026-08-27 14:45:58
+<==      Total: 10
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@21835f0b]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@cfdaec7] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1342636335 wrapping com.mysql.cj.jdbc.ConnectionImpl@1ee4d022] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,name,avatar,introduction,status,reject_reason,deleted,create_time,update_time FROM singer WHERE id IN ( ? , ? , ? ) AND deleted=0
+==> Parameters: 26(Long), 31(Long), 25(Long)
+<==    Columns: id, user_id, name, avatar, introduction, status, reject_reason, deleted, create_time, update_time
+<==        Row: 25, null, 阿依古丽, null, 新疆民族唱腔，辽阔高亢。, 1, null, 0, 2026-08-27 14:45:58, 2026-08-27 14:45:58
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@bc60e5c] was not registered for synchronization because synchronization is not active
+<==        Row: 26, null, Blue Hour, null, 爵士四重奏，午夜俱乐部驻场。, 1, null, 0, 2026-08-27 14:45:58, 2026-08-27 14:45:58
+JDBC Connection [HikariProxyConnection@1491826802 wrapping com.mysql.cj.jdbc.ConnectionImpl@3010ef13] will not be managed by Spring
+<==        Row: 31, 72, user, null, null, 1, null, 0, 2026-08-31 14:42:54, 2026-08-31 14:42:54
+==>  Preparing: SELECT id,user_id,name,avatar,introduction,status,reject_reason,deleted,create_time,update_time FROM singer WHERE id IN ( ? , ? , ? , ? ) AND deleted=0
+<==      Total: 3
+==> Parameters: 22(Long), 31(Long), 26(Long), 30(Long)
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@cfdaec7]
+<==    Columns: id, user_id, name, avatar, introduction, status, reject_reason, deleted, create_time, update_time
+<==        Row: 22, null, 程一诺, null, 治愈系女声，嗓音干净温暖。, 1, null, 0, 2026-08-27 14:45:58, 2026-08-27 14:45:58
+<==        Row: 26, null, Blue Hour, null, 爵士四重奏，午夜俱乐部驻场。, 1, null, 0, 2026-08-27 14:45:58, 2026-08-27 14:45:58
+<==        Row: 30, null, Kira, null, 偶像流行歌手，舞台感染力强。, 1, null, 0, 2026-08-27 14:45:58, 2026-08-27 14:45:58
+<==        Row: 31, 72, user, null, null, 1, null, 0, 2026-08-31 14:42:54, 2026-08-31 14:42:54
+<==      Total: 4
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@bc60e5c]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e24c3dd] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@226858652 wrapping com.mysql.cj.jdbc.ConnectionImpl@3010ef13] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,name,avatar,introduction,status,reject_reason,deleted,create_time,update_time FROM singer WHERE id=? AND deleted=0
+==> Parameters: 31(Long)
+<==    Columns: id, user_id, name, avatar, introduction, status, reject_reason, deleted, create_time, update_time
+<==        Row: 31, 72, user, null, null, 1, null, 0, 2026-08-31 14:42:54, 2026-08-31 14:42:54
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e24c3dd]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4091dc40] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1966352541 wrapping com.mysql.cj.jdbc.ConnectionImpl@7e3fe841] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,name,avatar,introduction,status,reject_reason,deleted,create_time,update_time FROM singer WHERE id IN ( ? ) AND deleted=0
+==> Parameters: 31(Long)
+<==    Columns: id, user_id, name, avatar, introduction, status, reject_reason, deleted, create_time, update_time
+<==        Row: 31, 72, user, null, null, 1, null, 0, 2026-08-31 14:42:54, 2026-08-31 14:42:54
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4091dc40]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@497a3d8b] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@2096478912 wrapping com.mysql.cj.jdbc.ConnectionImpl@1ee4d022] will not be managed by Spring
+==>  Preparing: SELECT singer_id FROM singer_follow WHERE (user_id = ?)
+==> Parameters: 72(Long)
+<==      Total: 0
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@497a3d8b]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6928b8fe] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@526741960 wrapping com.mysql.cj.jdbc.ConnectionImpl@3010ef13] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,singer_id,create_time FROM singer_follow WHERE (user_id = ?) ORDER BY id DESC
+==> Parameters: 72(Long)
+<==      Total: 0
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6928b8fe]
+Creating a new SqlSession
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@65e9df92] was not registered for synchronization because synchronization is not active
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@510ad06e] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1066950897 wrapping com.mysql.cj.jdbc.ConnectionImpl@3010ef13] will not be managed by Spring
+JDBC Connection [HikariProxyConnection@2019411723 wrapping com.mysql.cj.jdbc.ConnectionImpl@1ee4d022] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,name,avatar,introduction,status,reject_reason,deleted,create_time,update_time FROM singer WHERE id IN ( ? , ? ) AND deleted=0
+==>  Preparing: SELECT id,user_id,name,avatar,introduction,status,reject_reason,deleted,create_time,update_time FROM singer WHERE id IN ( ? , ? ) AND deleted=0
+==> Parameters: 31(Long), 26(Long)
+==> Parameters: 31(Long), 22(Long)
+<==    Columns: id, user_id, name, avatar, introduction, status, reject_reason, deleted, create_time, update_time
+<==    Columns: id, user_id, name, avatar, introduction, status, reject_reason, deleted, create_time, update_time
+<==        Row: 26, null, Blue Hour, null, 爵士四重奏，午夜俱乐部驻场。, 1, null, 0, 2026-08-27 14:45:58, 2026-08-27 14:45:58
+<==        Row: 22, null, 程一诺, null, 治愈系女声，嗓音干净温暖。, 1, null, 0, 2026-08-27 14:45:58, 2026-08-27 14:45:58
+<==        Row: 31, 72, user, null, null, 1, null, 0, 2026-08-31 14:42:54, 2026-08-31 14:42:54
+<==        Row: 31, 72, user, null, null, 1, null, 0, 2026-08-31 14:42:54, 2026-08-31 14:42:54
+<==      Total: 2
+<==      Total: 2
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@510ad06e]
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@65e9df92]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6a36ec67] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@862226064 wrapping com.mysql.cj.jdbc.ConnectionImpl@1ee4d022] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,name,avatar,introduction,status,reject_reason,deleted,create_time,update_time FROM singer WHERE deleted=0 AND (user_id = ?) ORDER BY id DESC LIMIT 1
+==> Parameters: 72(Long)
+<==    Columns: id, user_id, name, avatar, introduction, status, reject_reason, deleted, create_time, update_time
+<==        Row: 31, 72, user, null, null, 1, null, 0, 2026-08-31 14:42:54, 2026-08-31 14:42:54
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6a36ec67]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4d5140be] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1989227800 wrapping com.mysql.cj.jdbc.ConnectionImpl@3010ef13] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,name,avatar,introduction,status,reject_reason,deleted,create_time,update_time FROM singer WHERE deleted=0 AND (user_id = ?) ORDER BY id DESC LIMIT 1
+==> Parameters: 72(Long)
+<==    Columns: id, user_id, name, avatar, introduction, status, reject_reason, deleted, create_time, update_time
+<==        Row: 31, 72, user, null, null, 1, null, 0, 2026-08-31 14:42:54, 2026-08-31 14:42:54
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4d5140be]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@318015f9] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1357520536 wrapping com.mysql.cj.jdbc.ConnectionImpl@1ee4d022] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,name,avatar,introduction,status,reject_reason,deleted,create_time,update_time FROM singer WHERE id=? AND deleted=0
+==> Parameters: 31(Long)
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7199f3e8] was not registered for synchronization because synchronization is not active
+<==    Columns: id, user_id, name, avatar, introduction, status, reject_reason, deleted, create_time, update_time
+<==        Row: 31, 72, user, null, null, 1, null, 0, 2026-08-31 14:42:54, 2026-08-31 14:42:54
+JDBC Connection [HikariProxyConnection@1243002729 wrapping com.mysql.cj.jdbc.ConnectionImpl@3010ef13] will not be managed by Spring
+<==      Total: 1
+==>  Preparing: SELECT singer_id FROM singer_follow WHERE (user_id = ?)
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@318015f9]
+==> Parameters: 72(Long)
+<==      Total: 0
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7199f3e8]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1f69dfdd] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@558987627 wrapping com.mysql.cj.jdbc.ConnectionImpl@3010ef13] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,name,avatar,introduction,status,reject_reason,deleted,create_time,update_time FROM singer WHERE id IN ( ? ) AND deleted=0
+==> Parameters: 31(Long)
+<==    Columns: id, user_id, name, avatar, introduction, status, reject_reason, deleted, create_time, update_time
+<==        Row: 31, 72, user, null, null, 1, null, 0, 2026-08-31 14:42:54, 2026-08-31 14:42:54
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1f69dfdd]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2ad7a20e] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@32112009 wrapping com.mysql.cj.jdbc.ConnectionImpl@179a0720] will not be managed by Spring
+==>  Preparing: SELECT singer_id FROM singer_follow WHERE (user_id = ?)
+==> Parameters: 72(Long)
+<==      Total: 0
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2ad7a20e]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4c5a6b1] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1506617242 wrapping com.mysql.cj.jdbc.ConnectionImpl@179a0720] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,name,avatar,introduction,status,reject_reason,deleted,create_time,update_time FROM singer WHERE deleted=0 AND (user_id = ?) ORDER BY id DESC LIMIT 1
+==> Parameters: 72(Long)
+<==    Columns: id, user_id, name, avatar, introduction, status, reject_reason, deleted, create_time, update_time
+<==        Row: 31, 72, user, null, null, 1, null, 0, 2026-08-31 14:42:54, 2026-08-31 14:42:54
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4c5a6b1]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@66676d8e] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@569673036 wrapping com.mysql.cj.jdbc.ConnectionImpl@179a0720] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,name,avatar,introduction,status,reject_reason,deleted,create_time,update_time FROM singer WHERE deleted=0 AND (user_id = ?) ORDER BY id DESC LIMIT 1
+==> Parameters: 72(Long)
+<==    Columns: id, user_id, name, avatar, introduction, status, reject_reason, deleted, create_time, update_time
+<==        Row: 31, 72, user, null, null, 1, null, 0, 2026-08-31 14:42:54, 2026-08-31 14:42:54
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@66676d8e]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2e64153f] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@536535767 wrapping com.mysql.cj.jdbc.ConnectionImpl@179a0720] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,name,avatar,introduction,status,reject_reason,deleted,create_time,update_time FROM singer WHERE id=? AND deleted=0
+==> Parameters: 31(Long)
+<==    Columns: id, user_id, name, avatar, introduction, status, reject_reason, deleted, create_time, update_time
+<==        Row: 31, 72, user, null, null, 1, null, 0, 2026-08-31 14:42:54, 2026-08-31 14:42:54
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2e64153f]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@590ad00d] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@293128922 wrapping com.mysql.cj.jdbc.ConnectionImpl@179a0720] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,name,avatar,introduction,status,reject_reason,deleted,create_time,update_time FROM singer WHERE id IN ( ? ) AND deleted=0
+==> Parameters: 31(Long)
+<==    Columns: id, user_id, name, avatar, introduction, status, reject_reason, deleted, create_time, update_time
+<==        Row: 31, 72, user, null, null, 1, null, 0, 2026-08-31 14:42:54, 2026-08-31 14:42:54
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@590ad00d]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7ce90a50] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@766485799 wrapping com.mysql.cj.jdbc.ConnectionImpl@179a0720] will not be managed by Spring
+==>  Preparing: SELECT singer_id FROM singer_follow WHERE (user_id = ?)
+==> Parameters: 72(Long)
+<==      Total: 0
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7ce90a50]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@435d23cc] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1532221513 wrapping com.mysql.cj.jdbc.ConnectionImpl@aa15a59] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,name,avatar,introduction,status,reject_reason,deleted,create_time,update_time FROM singer WHERE id IN ( ? ) AND deleted=0
+==> Parameters: 30(Long)
+<==    Columns: id, user_id, name, avatar, introduction, status, reject_reason, deleted, create_time, update_time
+<==        Row: 30, null, Kira, null, 偶像流行歌手，舞台感染力强。, 1, null, 0, 2026-08-27 14:45:58, 2026-08-27 14:45:58
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@435d23cc]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2e2abd3b] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1010150551 wrapping com.mysql.cj.jdbc.ConnectionImpl@aa15a59] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,name,avatar,introduction,status,reject_reason,deleted,create_time,update_time FROM singer WHERE deleted=0 AND (id IN (?,?,?) AND status = ?)
+==> Parameters: 21(Long), 22(Long), 30(Long), 1(Integer)
+<==    Columns: id, user_id, name, avatar, introduction, status, reject_reason, deleted, create_time, update_time
+<==        Row: 21, null, 木鱼组合, null, 国风新民谣组合，古筝与吉他的碰撞。, 1, null, 0, 2026-08-27 14:45:58, 2026-08-27 14:45:58
+<==        Row: 22, null, 程一诺, null, 治愈系女声，嗓音干净温暖。, 1, null, 0, 2026-08-27 14:45:58, 2026-08-27 14:45:58
+<==        Row: 30, null, Kira, null, 偶像流行歌手，舞台感染力强。, 1, null, 0, 2026-08-27 14:45:58, 2026-08-27 14:45:58
+<==      Total: 3
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2e2abd3b]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@319fa8f8] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@915511045 wrapping com.mysql.cj.jdbc.ConnectionImpl@aa15a59] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,name,avatar,introduction,status,reject_reason,deleted,create_time,update_time FROM singer WHERE id=? AND deleted=0
+==> Parameters: 21(Long)
+<==    Columns: id, user_id, name, avatar, introduction, status, reject_reason, deleted, create_time, update_time
+<==        Row: 21, null, 木鱼组合, null, 国风新民谣组合，古筝与吉他的碰撞。, 1, null, 0, 2026-08-27 14:45:58, 2026-08-27 14:45:58
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@319fa8f8]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@625919d5] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1266731777 wrapping com.mysql.cj.jdbc.ConnectionImpl@aa15a59] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,name,avatar,introduction,status,reject_reason,deleted,create_time,update_time FROM singer WHERE id IN ( ? ) AND deleted=0
+==> Parameters: 21(Long)
+<==    Columns: id, user_id, name, avatar, introduction, status, reject_reason, deleted, create_time, update_time
+<==        Row: 21, null, 木鱼组合, null, 国风新民谣组合，古筝与吉他的碰撞。, 1, null, 0, 2026-08-27 14:45:58, 2026-08-27 14:45:58
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@625919d5]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@75bcb66] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1522665941 wrapping com.mysql.cj.jdbc.ConnectionImpl@aa15a59] will not be managed by Spring
+==>  Preparing: SELECT COUNT( * ) AS total FROM singer_follow WHERE (singer_id = ?)
+==> Parameters: 21(Long)
+<==    Columns: total
+<==        Row: 0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@75bcb66]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5dbfaa37] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1379570485 wrapping com.mysql.cj.jdbc.ConnectionImpl@aa15a59] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,name,avatar,introduction,status,reject_reason,deleted,create_time,update_time FROM singer WHERE id IN ( ? , ? ) AND deleted=0
+==> Parameters: 30(Long), 22(Long)
+<==    Columns: id, user_id, name, avatar, introduction, status, reject_reason, deleted, create_time, update_time
+<==        Row: 22, null, 程一诺, null, 治愈系女声，嗓音干净温暖。, 1, null, 0, 2026-08-27 14:45:58, 2026-08-27 14:45:58
+<==        Row: 30, null, Kira, null, 偶像流行歌手，舞台感染力强。, 1, null, 0, 2026-08-27 14:45:58, 2026-08-27 14:45:58
+<==      Total: 2
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5dbfaa37]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@40a5e16b] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1948965029 wrapping com.mysql.cj.jdbc.ConnectionImpl@aa15a59] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,name,avatar,introduction,status,reject_reason,deleted,create_time,update_time FROM singer WHERE id IN ( ? ) AND deleted=0
+==> Parameters: 31(Long)
+<==    Columns: id, user_id, name, avatar, introduction, status, reject_reason, deleted, create_time, update_time
+<==        Row: 31, 72, user, null, null, 1, null, 0, 2026-08-31 14:42:54, 2026-08-31 14:42:54
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@40a5e16b]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7a82411b] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1314751666 wrapping com.mysql.cj.jdbc.ConnectionImpl@aa15a59] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,name,avatar,introduction,status,reject_reason,deleted,create_time,update_time FROM singer WHERE id IN ( ? , ? ) AND deleted=0
+==> Parameters: 30(Long), 22(Long)
+<==    Columns: id, user_id, name, avatar, introduction, status, reject_reason, deleted, create_time, update_time
+<==        Row: 22, null, 程一诺, null, 治愈系女声，嗓音干净温暖。, 1, null, 0, 2026-08-27 14:45:58, 2026-08-27 14:45:58
+<==        Row: 30, null, Kira, null, 偶像流行歌手，舞台感染力强。, 1, null, 0, 2026-08-27 14:45:58, 2026-08-27 14:45:58
+<==      Total: 2
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7a82411b]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@103cb3d6] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1585520205 wrapping com.mysql.cj.jdbc.ConnectionImpl@aa15a59] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,name,avatar,introduction,status,reject_reason,deleted,create_time,update_time FROM singer WHERE id IN ( ? , ? , ? ) AND deleted=0
+==> Parameters: 31(Long), 25(Long), 30(Long)
+<==    Columns: id, user_id, name, avatar, introduction, status, reject_reason, deleted, create_time, update_time
+<==        Row: 25, null, 阿依古丽, null, 新疆民族唱腔，辽阔高亢。, 1, null, 0, 2026-08-27 14:45:58, 2026-08-27 14:45:58
+<==        Row: 30, null, Kira, null, 偶像流行歌手，舞台感染力强。, 1, null, 0, 2026-08-27 14:45:58, 2026-08-27 14:45:58
+<==        Row: 31, 72, user, null, null, 1, null, 0, 2026-08-31 14:42:54, 2026-08-31 14:42:54
+<==      Total: 3
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@103cb3d6]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@239f7918] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1665878382 wrapping com.mysql.cj.jdbc.ConnectionImpl@aa15a59] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,name,avatar,introduction,status,reject_reason,deleted,create_time,update_time FROM singer WHERE deleted=0 AND (status = ? AND name LIKE ?)
+==> Parameters: 1(Integer), %晴%(String)
+<==      Total: 0
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@239f7918]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5efe1c94] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@633778453 wrapping com.mysql.cj.jdbc.ConnectionImpl@aa15a59] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,name,avatar,introduction,status,reject_reason,deleted,create_time,update_time FROM singer WHERE id IN ( ? ) AND deleted=0
+==> Parameters: 31(Long)
+<==    Columns: id, user_id, name, avatar, introduction, status, reject_reason, deleted, create_time, update_time
+<==        Row: 31, 72, user, null, null, 1, null, 0, 2026-08-31 14:42:54, 2026-08-31 14:42:54
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5efe1c94]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6607c293] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1278933047 wrapping com.mysql.cj.jdbc.ConnectionImpl@aa15a59] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,name,avatar,introduction,status,reject_reason,deleted,create_time,update_time FROM singer WHERE id IN ( ? ) AND deleted=0
+==> Parameters: 31(Long)
+<==    Columns: id, user_id, name, avatar, introduction, status, reject_reason, deleted, create_time, update_time
+<==        Row: 31, 72, user, null, null, 1, null, 0, 2026-08-31 14:42:54, 2026-08-31 14:42:54
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6607c293]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@334a1cd5] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1779691809 wrapping com.mysql.cj.jdbc.ConnectionImpl@aa15a59] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,name,avatar,introduction,status,reject_reason,deleted,create_time,update_time FROM singer WHERE id=? AND deleted=0
+==> Parameters: 21(Long)
+<==    Columns: id, user_id, name, avatar, introduction, status, reject_reason, deleted, create_time, update_time
+<==        Row: 21, null, 木鱼组合, null, 国风新民谣组合，古筝与吉他的碰撞。, 1, null, 0, 2026-08-27 14:45:58, 2026-08-27 14:45:58
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@334a1cd5]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@40d3715] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1499144455 wrapping com.mysql.cj.jdbc.ConnectionImpl@aa15a59] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,name,avatar,introduction,status,reject_reason,deleted,create_time,update_time FROM singer WHERE id IN ( ? ) AND deleted=0
+==> Parameters: 21(Long)
+<==    Columns: id, user_id, name, avatar, introduction, status, reject_reason, deleted, create_time, update_time
+<==        Row: 21, null, 木鱼组合, null, 国风新民谣组合，古筝与吉他的碰撞。, 1, null, 0, 2026-08-27 14:45:58, 2026-08-27 14:45:58
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@40d3715]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7551f90] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@775060569 wrapping com.mysql.cj.jdbc.ConnectionImpl@aa15a59] will not be managed by Spring
+==>  Preparing: SELECT COUNT( * ) AS total FROM singer_follow WHERE (singer_id = ?)
+==> Parameters: 21(Long)
+<==    Columns: total
+<==        Row: 0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7551f90]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@442d4bba] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1257141229 wrapping com.mysql.cj.jdbc.ConnectionImpl@aa15a59] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,name,avatar,introduction,status,reject_reason,deleted,create_time,update_time FROM singer WHERE deleted=0 AND (status = ? AND name LIKE ?) ORDER BY id DESC LIMIT 5
+==> Parameters: 1(Integer), %Kira%(String)
+<==    Columns: id, user_id, name, avatar, introduction, status, reject_reason, deleted, create_time, update_time
+<==        Row: 30, null, Kira, null, 偶像流行歌手，舞台感染力强。, 1, null, 0, 2026-08-27 14:45:58, 2026-08-27 14:45:58
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@442d4bba]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@71a75a62] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1374267507 wrapping com.mysql.cj.jdbc.ConnectionImpl@aa15a59] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,name,avatar,introduction,status,reject_reason,deleted,create_time,update_time FROM singer WHERE id=? AND deleted=0
+==> Parameters: 19(Long)
+<==    Columns: id, user_id, name, avatar, introduction, status, reject_reason, deleted, create_time, update_time
+<==        Row: 19, 1, 歌神, null, null, 1, null, 0, 2026-08-27 14:34:18, 2026-08-27 14:34:18
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@71a75a62]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4ffab336] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@80057569 wrapping com.mysql.cj.jdbc.ConnectionImpl@aa15a59] will not be managed by Spring
+==>  Preparing: SELECT COUNT( * ) AS total FROM singer_follow WHERE (user_id = ? AND singer_id = ?)
+==> Parameters: 2(Long), 19(Long)
+<==    Columns: total
+<==        Row: 0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4ffab336]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2e5ba94e] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@874695856 wrapping com.mysql.cj.jdbc.ConnectionImpl@aa15a59] will not be managed by Spring
+==>  Preparing: INSERT INTO singer_follow ( user_id, singer_id ) VALUES ( ?, ? )
+==> Parameters: 2(Long), 19(Long)
+<==    Updates: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2e5ba94e]
+2026-09-08T00:12:19.997+08:00  INFO 3764 --- [yuexiang-singer] [nio-8083-exec-8] c.q.y.s.service.impl.SingerServiceImpl   : 用户关注歌手: userId=2, singerId=19
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5b425306] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@881024956 wrapping com.mysql.cj.jdbc.ConnectionImpl@aa15a59] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,singer_id,create_time FROM singer_follow WHERE (user_id = ?) ORDER BY id DESC
+==> Parameters: 2(Long)
+<==    Columns: id, user_id, singer_id, create_time
+<==        Row: 3, 2, 19, 2026-09-08 00:12:19
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5b425306]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@541c4937] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@487582417 wrapping com.mysql.cj.jdbc.ConnectionImpl@aa15a59] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,name,avatar,introduction,status,reject_reason,deleted,create_time,update_time FROM singer WHERE id IN ( ? ) AND deleted=0
+==> Parameters: 19(Long)
+<==    Columns: id, user_id, name, avatar, introduction, status, reject_reason, deleted, create_time, update_time
+<==        Row: 19, 1, 歌神, null, null, 1, null, 0, 2026-08-27 14:34:18, 2026-08-27 14:34:18
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@541c4937]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3f004a8b] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1466064617 wrapping com.mysql.cj.jdbc.ConnectionImpl@aa15a59] will not be managed by Spring
+==>  Preparing: SELECT singer_id FROM singer_follow WHERE (user_id = ?)
+==> Parameters: 2(Long)
+<==    Columns: singer_id
+<==        Row: 19
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3f004a8b]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@35631a43] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1077194042 wrapping com.mysql.cj.jdbc.ConnectionImpl@aa15a59] will not be managed by Spring
+==>  Preparing: DELETE FROM singer_follow WHERE (user_id = ? AND singer_id = ?)
+==> Parameters: 2(Long), 19(Long)
+<==    Updates: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@35631a43]
+2026-09-08T00:12:20.555+08:00  INFO 3764 --- [yuexiang-singer] [nio-8083-exec-9] c.q.y.s.service.impl.SingerServiceImpl   : 用户取消关注: userId=2, singerId=19
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5e9de2ac] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1738854440 wrapping com.mysql.cj.jdbc.ConnectionImpl@aa15a59] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,name,avatar,introduction,status,reject_reason,deleted,create_time,update_time FROM singer WHERE id IN ( ? ) AND deleted=0
+==> Parameters: 30(Long)
+<==    Columns: id, user_id, name, avatar, introduction, status, reject_reason, deleted, create_time, update_time
+<==        Row: 30, null, Kira, null, 偶像流行歌手，舞台感染力强。, 1, null, 0, 2026-08-27 14:45:58, 2026-08-27 14:45:58
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5e9de2ac]
+2026-09-08T08:48:01.013+08:00  WARN 3764 --- [yuexiang-singer] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m10s129ms742?s900ns).
